@@ -1,0 +1,188 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*ВИТРИНА ТОВАРОВ*/
+.goods__box {
+  position: relative;
+  width: 70%;
+  min-width: 850px;
+  margin-left: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.goods__box_sku {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2%;
+  min-width: 200px;
+  max-width: 15%;
+}
+
+.goods__box_img {
+  width: 100%;
+  height: auto;
+}
+
+.goods__box_a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: darkgreen;
+  cursor: pointer;
+}
+
+.goods__box_name {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  padding: 0 1rem;
+}
+
+/*МОДАЛЬНОЕ ОКНО*/
+.goods__window {
+  position: fixed;
+  top: 25%;
+  left: 30%;
+  right: 20%;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.goods__window_position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+          box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  padding: 1rem;
+}
+
+.goods__window_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+}
+
+.goods__window_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.goods__window_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+  padding: 1rem;
+}
+
+.goods__window_name {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  padding: 1rem 0;
+  text-align: left;
+  font-weight: 600;
+}
+
+.goods__window_description {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  padding: 1rem 0;
+  text-align: left;
+}
+
+/*МЕНЮ РОУТЕРОВ*/
+.router__window {
+  position: fixed;
+  top: 25%;
+  left: 2%;
+  background-color: white;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+          box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  display: inline-block;
+}
+
+.router__window_link {
+  margin: 2rem 1rem;
+}
+
+.router__window_img {
+  width: 25%;
+  margin-top: 15%;
+}
+
+/*ЗАГОЛОВОК РАЗДЕЛА*/
+.tmHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tmHeader__header_img {
+  height: 2.5rem;
+}
+
+.tmHeader__header {
+  font-size: 2.5rem;
+  padding: 0 3rem;
+  text-align: center;
+}
+
+.tmHeader__text {
+  margin-left: 20%;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  padding: 1rem 3rem;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
