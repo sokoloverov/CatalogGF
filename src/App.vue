@@ -1,10 +1,11 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
+      <router-link to="/">Навигация</router-link> |
+      <router-link to="/about">О компании</router-link> |
       <router-link to="/gfgreen">GF Green</router-link> |
-      <router-link to="/goodfood">GOOD FOOD</router-link>
+      <router-link to="/goodfood">GOOD FOOD</router-link> |
+      <router-link to="/nutberry">NUTBERRY</router-link>
     </div>
     <router-view />
   </div>

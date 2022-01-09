@@ -2,68 +2,60 @@
   <div>
     <div class="tmHeader__header_small">{{ header }}</div>
     <show-case :sku="gfGreenDrageeCards" />
-    <router-window :routerlinks="routs" :logo="logo" />
   </div>
 </template>
 
 <script>
 import ShowCase from "../components/ShowCase.vue";
-import RouterWindow from "../components/RouterWindow.vue";
 
 import logo from "../assets/logo/logo.png";
 
-import gfGreenDpeanut from "../assets/GFGreen/GFGreenDragee/GF_Green_арахис_в_шоколаде_front.jpg";
-import gfGreenDpinenut from "../assets/GFGreen/GFGreenDragee/GF_Green_кедровый_орех_в_шоколаде_front.jpg";
-import gfGreenDcashew from "../assets/GFGreen/GFGreenDragee/GF_Green_кешью_в_шоколаде_front.jpg";
-import gfGreenDalmond from "../assets/GFGreen/GFGreenDragee/GF_Green_миндаль_в_шоколаде_front.jpg";
-import gfGreenDhazelnut from "../assets/GFGreen/GFGreenDragee/GF_Green_фундук_в_шоколаде_front.jpg";
+import GreenDpeanut from "../assets/GFGreen/GFGreenDragee/GF_Green_арахис_в_шоколаде_front.jpg";
+import GreenDpinenut from "../assets/GFGreen/GFGreenDragee/GF_Green_кедровый_орех_в_шоколаде_front.jpg";
+import GreenDcashew from "../assets/GFGreen/GFGreenDragee/GF_Green_кешью_в_шоколаде_front.jpg";
+import GreenDalmond from "../assets/GFGreen/GFGreenDragee/GF_Green_миндаль_в_шоколаде_front.jpg";
+import GreenDhazelnut from "../assets/GFGreen/GFGreenDragee/GF_Green_фундук_в_шоколаде_front.jpg";
 
 export default {
   name: "GFGreenDragee",
   components: {
     ShowCase,
-    RouterWindow,
   },
   data() {
     return {
       header: "Драже в шоколаде",
       logo,
-      routs: [
-        { rout: "/gfgreen/sweets", name: "GF Green конфеты" },
-        { rout: "/gfgreen/driedfruits", name: "GF Green сухофрукты" },
-        { rout: "/gfgreen/dragee", name: "GF Green драже" },
-      ],
       gfGreenDrageeCards: [
         {
-          picture: gfGreenDpeanut,
+          picture: GreenDpeanut,
           text: "GOOD FOOD Green Арахис в шоколаде 150 г",
           id: 1,
           description:
             "Состав: шоколадная масса (сахар, масло какао, тёртое какао, какао-порошок, эмульгатор - лецитин соевый, ванильный порошок (молотые стручки ванили)), жареные ядра арахиса.<br>Содержание общего сухого остатка какао - продуктов в шоколадной массе -  не менее 44%, содержание какао - масла не менее 34,5%.<br>Продукт может содержать следы молочного белка, кунжута и орехов.<br>Пищевая ценность в 100 г: Белки - 14,1 г, Жиры 40,8 г, Углеводы 33,8 г.<br>Энергетическая ценность 558 Ккал.<br>Хранить при температуре от +15°С до +21°С и относительной влажности воздуха не более 75%.<br>ТУ 9122-003-60458573-09<br>Страна изготовитель: Россия",
         },
         {
-          picture: gfGreenDpinenut,
+          picture: GreenDpinenut,
           text: "GOOD FOOD Green Кедровый орех в шоколаде 150 г",
           id: 2,
           description:
             "Состав: шоколадная масса (cахар, масло какао, тёртое какао, какао - порошок, эмульгатор - лецитин соевый, ванильный порошок (молотые стручки ванили)), ядра кедрового ореха.<br>Содержание общего сухого остатка какао - продуктов в шоколадной массе -  не менее 44%, содержание какао - масла не менее 34,5%.<br>Продукт может содержать следы молочного белка, кунжута и других орехов.<br>Пищевая ценность в 100 г: Белки - 7,3 г, Жиры 35,0 г, Углеводы 45,1 г.<br>Энергетическая ценность 524 Ккал.<br>Хранить при температуре от +15°С до +21°С и относительной влажности воздуха не более 75%.<br>ТУ 9122-003-60458573-09<br>Страна изготовитель: Россия",
         },
         {
-          picture: gfGreenDcashew,
+          picture: GreenDcashew,
           text: "GOOD FOOD Green Кешью в шоколаде 150 г",
           id: 3,
           description:
             "Состав: шоколадная масса (cахар, масло какао, тёртое какао, какао - порошок, эмульгатор - лецитин соевый, ванильный порошок (молотые стручки ванили), жареные ядра кешью.<br>Содержание общего сухого остатка какао - продуктов в шоколадной массе -  не менее 44%, содержание какао - масла не менее 34,5%.<br>Продукт может содержать следы молочного белка, кунжута и других орехов.<br>Пищевая ценность в 100 г: Белки - 12,4 г, Жиры 42,4 г, Углеводы 36,4 г.<br>Энергетическая ценность 577 Ккал.<br>Хранить при температуре от +15°С до +21°С и относительной влажности воздуха не более 75%.<br>ТУ 9122-003-60458573-09<br>Страна изготовитель: Россия",
         },
         {
-          picture: gfGreenDalmond,
+          picture: GreenDalmond,
           text: "GOOD FOOD Green Миндаль в шоколаде 150 г",
           id: 4,
           description:
             "Состав: шоколадная масса (cахар, масло какао, тёртое какао, какао - порошок, эмульгатор - лецитин соевый, ванильный порошок (молотые стручки ванили)), жареные ядра миндаля.<br>Содержание общего сухого остатка какао - продуктов в шоколадной массе -  не менее 44%, содержание какао - масла не менее 34,5%.<br>Продукт может содержать следы молочного белка, кунжута и других орехов.<br>Пищевая ценность в 100 г: Белки - 15,8 г, Жиры 40,7 г, Углеводы 34,2 г.<br>Энергетическая ценность 566 Ккал.<br>Хранить при температуре от +15°С до +21°С и относительной влажности воздуха не более 75%.<br>ТУ 9122-003-60458573-09<br>Страна изготовитель: Россия",
         },
         {
-          picture: gfGreenDhazelnut,
+          picture: GreenDhazelnut,
           text: "GOOD FOOD Green Фундук в шоколаде 150 г",
           id: 5,
           description:

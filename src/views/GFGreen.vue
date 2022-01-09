@@ -12,7 +12,7 @@
       смысле этого термина, продукт, не имеющее пока на российском рынке прямых
       аналогов.
     </div>
-    <router-window :routerlinks="routs" :logo="logo" />
+    <router-window :routerlinks="routs" :logo="logo" :mainLink="mainRout" />
     <router-view />
   </div>
 </template>
@@ -32,10 +32,11 @@ export default {
     return {
       header: "Органические сладости",
       logo,
+      mainRout: "/gfgreen",
       routs: [
-        { rout: "/gfgreen/sweets", name: "GF Green конфеты" },
-        { rout: "/gfgreen/driedfruits", name: "GF Green сухофрукты" },
-        { rout: "/gfgreen/dragee", name: "GF Green драже" },
+        { rout: "/gfgreen/sweets", name: "конфеты" },
+        { rout: "/gfgreen/driedfruits", name: "сухофрукты" },
+        { rout: "/gfgreen/dragee", name: "драже" },
       ],
     };
   },

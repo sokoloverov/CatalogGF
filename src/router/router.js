@@ -40,32 +40,74 @@ const routes = [
       },
     ]
   },
-
-
   {
     path: '/goodfood',
     name: 'GOOD FOOD',
-    component: () => import('../views/GoodFood.vue')
+    component: () => import('../views/GoodFood.vue'),
+    children: [
+      {
+        path: 'nuts',
+        name: 'GOOD FOOD орехи',
+        component: () => import('../views/GoodFoodNuts.vue')
+      },
+      {
+        path: 'driedfruits',
+        name: 'GOOD FOOD сухофрукты',
+        component: () => import('../views/GoodFoodDriedfruits.vue')
+      },
+      {
+        path: 'mix',
+        name: 'GOOD FOOD смеси',
+        component: () => import('../views/GoodFoodMix.vue')
+      },
+      {
+        path: 'dragee',
+        name: 'GOOD FOOD драже',
+        component: () => import('../views/GoodFoodDragee.vue')
+      },
+    ]
   },
   {
-    path: '/goodfood/nuts',
-    name: 'GOOD FOOD орехи',
-    component: () => import('../views/GoodFoodNuts.vue')
-  },
-  {
-    path: '/goodfood/driedfruits',
-    name: 'GOOD FOOD сухофрукты',
-    component: () => import('../views/GoodFoodDriedfruits.vue')
-  },
-  {
-    path: '/goodfood/mix',
-    name: 'GOOD FOOD смеси',
-    component: () => import('../views/GoodFoodMix.vue')
-  },
-  {
-    path: '/goodfood/dragee',
-    name: 'GOOD FOOD драже',
-    component: () => import('../views/GoodFoodDragee.vue')
+    path: '/nutberry',
+    name: 'NUTBERRY',
+    component: () => import('../views/Nutberry.vue'),
+    children: [
+      {
+        path: 'nuts',
+        name: 'NUTBERRY орехи',
+        component: () => import('../views/NutberryNuts.vue')
+      },
+      {
+        path: 'driedfruits',
+        name: 'NUTBERRY сухофрукты',
+        component: () => import('../views/NutberryDriedfruits.vue')
+      },
+      {
+        path: 'mix',
+        name: 'NUTBERRY смеси',
+        component: () => import('../views/NutberryMix.vue')
+      },
+      {
+        path: 'fruitbar',
+        name: 'NUTBERRY фруктовые батончики',
+        component: () => import('../views/NutberryFruitBar.vue')
+      },
+      {
+        path: 'nutbar',
+        name: 'NUTBERRY орехово-фруктовые батончики',
+        component: () => import('../views/NutberryNutBar.vue')
+      },
+      {
+        path: 'corn',
+        name: 'NUTBERRY попкорн',
+        component: () => import('../views/NutberryCorn.vue')
+      },
+      {
+        path: 'pasta',
+        name: 'NUTBERRY ореховая паста',
+        component: () => import('../views/NutberryPasta.vue')
+      },
+    ]
   },
   {
     path: '*',

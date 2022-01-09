@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="router__window">
-      <router-link class="goods__box_a" to="/gfgreen">
+      <router-link class="goods__box_a" :to="mainLink">
         <img class="router__window_img" alt="Vue logo" :src="logo" />
       </router-link>
       <div
@@ -22,6 +22,7 @@ export default {
   name: "RouterWindow",
   props: {
     logo: String,
+    mainLink: String,
     routerlinks: [],
   },
 };
