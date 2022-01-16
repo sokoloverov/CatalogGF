@@ -1,15 +1,14 @@
 <template>
   <div class="goods__box">
     <div class="goods__box_sku" v-for="product in sku" :key="product.picture">
-      <a class="goods__box_a" @click="modalView(product.id)">
+      <a class="goods__box_a" @click="modalView(product)">
         <img class="goods__box_img" alt="Vue logo" :src="product.picture" />
         <p class="goods__box_name">{{ product.text }}</p>
       </a>
     </div>
     <product-card
       v-if="showProductCard"
-      :productCard="sku"
-      :idCard="id"
+      :productCard="productInWindow"
       @closeWindow="closeWindow"
     />
   </div>
@@ -28,13 +27,13 @@ export default {
   },
   data() {
     return {
-      id: 0,
+      productInWindow: [],
       showProductCard: false,
     };
   },
   methods: {
     modalView(product) {
-      this.id = product;
+      this.productInWindow = product;
       this.showProductCard = true;
     },
     closeWindow(data) {

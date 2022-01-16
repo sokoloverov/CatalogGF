@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+.logo {
+    height: 10rem;
+}
 /*ВИТРИНА ТОВАРОВ*/
 .goods__box {
     position: relative;
@@ -30,6 +33,11 @@
 .goods__box_a {
     text-decoration-line: none;
     color: darkgreen;
+    cursor: pointer;
+}
+.goods__box_a1 {
+    text-decoration-line: none;
+    color: rgb(158, 14, 50);
     cursor: pointer;
 }
 .goods__box_name {
@@ -88,8 +96,9 @@
 /*МЕНЮ РОУТЕРОВ*/
 .router__window {
     position: fixed;
-    top: 25%;
+    top: 20%;
     left: 2%;
+    min-width: 18%;
     background-color: white;
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     display: inline-block;
@@ -98,20 +107,28 @@
     margin: 2rem 1rem;
 }
 .router__window_img {
-    width: 25%;
+    height: 8rem;
     margin-top: 15%;
 }
 /*ЗАГОЛОВОК РАЗДЕЛА*/
 .tmHeader {
     display: flex;
     margin-left: 20%;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.tmHeader__header_img {
-    height: 2.5rem;
-}
 .tmHeader__header {
+    display: flex;
+    flex-direction: row;
+}
+.tmHeader__header_banner {
+    max-width: 90%;
+}
+.tmHeader__header_img {
+    height: 4rem;
+}
+.tmHeader__header_text {
     font-size: 2rem;
     padding: 0 2rem;
     text-align: center;

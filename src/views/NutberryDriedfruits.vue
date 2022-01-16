@@ -10,11 +10,12 @@ import ShowCase from "../components/ShowCase.vue";
 
 import logo from "../assets/logo/logo.png";
 
-import NBapricot from "../assets/NUTBERRY/NBdf/NB-абрикос-280b.jpg";
-import NBprunes from "../assets/NUTBERRY/NBdf/NB-чернослив-280.jpg";
-import NBraisinW from "../assets/NUTBERRY/NBdf/NB-изюм-светлый-190.jpg";
-import NBraisinB from "../assets/NUTBERRY/NBdf/NB-изюм-темный-190.jpg";
-import NBraisinC from "../assets/NUTBERRY/NBdf/NB_изюм_кишмиш_190.jpg";
+import NBapricot from "../assets/NUTBERRY/NBdf/NB-Абрикос-190.jpg";
+import NBprunes from "../assets/NUTBERRY/NBdf/NB-Чернослив-280.jpg";
+import NBraisinW from "../assets/NUTBERRY/NBdf/NB-Изюм-светлый-190.jpg";
+import NBraisinB from "../assets/NUTBERRY/NBdf/NB-Изюм-темный-190.jpg";
+import NBraisinC from "../assets/NUTBERRY/NBdf/NB-Изюм-кишмиш-190.jpg";
+import NBapricotCuraga from "../assets/NUTBERRY/NBdf/NB-Курага-190.jpg";
 
 export default {
   name: "NutberryDriedfruits",
@@ -28,7 +29,7 @@ export default {
       NBdriedfruitsCards: [
         {
           picture: NBapricot,
-          text: "NUTBERRY Абрикос 280 г",
+          text: "NUTBERRY Абрикос 190 г",
           id: 1,
           description:
             "Состав: абрикосы сушеные без косточек, консервант Е220.<br>Продукт может содержать косточки или их фрагменты; следы арахиса, кунжута, орехов. Продукт   рекомендуется мыть перед употреблением.<br>Пищевая ценность в 100 г: Белки 5,5 г, Жиры 0,5 г, Углеводы 63,5 <br>Энергетическая ценность 291 Ккал.<br>Хранить при температуре от +5 °С до +25°С и относительной влажности воздуха не более 75%.<br>ТУ 9164-002-60458573-15<br>Страна изготовитель: Россия",
@@ -60,6 +61,13 @@ export default {
           id: 5,
           description:
             "Состав: виноград сушеный без косточек, масло подсолнечное, консервант Е220.<br>Продукт может содержать следы арахиса, кунжута, орехов. Продукт рекомендуется мыть перед употреблением.<br>Пищевая ценность в 100 г: Белки - 2,5 г, Жиры 0,2 г, Углеводы 71,0<br>Энергетическая ценность 296 Ккал.<br>Хранить при температуре не выше +20°С и относительной влажности воздуха не более 70%.<br>ТУ 9761-004-60458573-12<br>Страна изготовитель: Россия",
+        },
+        {
+          picture: NBapricotCuraga,
+          text: "NUTBERRY Курага 190 г",
+          id: 6,
+          description:
+            "Состав: абрикосы сушеные без косточек, консервант Е220.<br>Продукт может содержать косточки или их фрагменты; следы арахиса, кунжута, орехов. Продукт   рекомендуется мыть перед употреблением.<br>Пищевая ценность в 100 г: Белки 5,5 г, Жиры 0,5 г, Углеводы 63,5 <br>Энергетическая ценность 291 Ккал.<br>Хранить при температуре от +5 °С до +25°С и относительной влажности воздуха не более 75%.<br>ТУ 9164-002-60458573-15<br>Страна изготовитель: Россия",
         },
       ],
     };

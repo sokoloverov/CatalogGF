@@ -13,10 +13,7 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () => import('../views/About.vue')
   },
   {
     path: '/gfgreen',
@@ -106,6 +103,38 @@ const routes = [
         path: 'pasta',
         name: 'NUTBERRY ореховая паста',
         component: () => import('../views/NutberryPasta.vue')
+      },
+    ]
+  },
+  {
+    path: '/vival',
+    name: 'Виваль',
+    component: () => import('../views/Vival.vue'),
+    children: [
+      {
+        path: 'coconutsweets',
+        name: 'Виваль кокосовые конфеты',
+        component: () => import('../views/VivalCoconut.vue')
+      },
+      {
+        path: 'dessert',
+        name: 'Виваль десертные конфеты',
+        component: () => import('../views/VivalDesserts.vue')
+      },
+      {
+        path: 'dragee',
+        name: 'Виваль драже',
+        component: () => import('../views/VivalDragee.vue')
+      },
+      {
+        path: 'fruitsweets',
+        name: 'Виваль фруктовые конфеты',
+        component: () => import('../views/VivalFruits.vue')
+      },
+      {
+        path: 'jelly',
+        name: 'Виваль фруктово-желейные конфеты',
+        component: () => import('../views/VivalJelly.vue')
       },
     ]
   },

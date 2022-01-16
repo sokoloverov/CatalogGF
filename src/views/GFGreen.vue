@@ -1,6 +1,11 @@
 <template>
   <div>
-    <section-header :headerName="header" :logo="logo" />
+    <section-header
+      :headerName="header"
+      :logo="logo"
+      :banner="banner"
+      :ifShow="checkRoute"
+    />
     <div class="tmHeader__text">
       Сочетание натурального и одновременно вкусного продукта без компромиссов.
       Используются только сухофрукты без консервантов, прошедшие проверку в
@@ -20,7 +25,9 @@
 <script>
 import SectionHeader from "../components/SectionHeader.vue";
 import RouterWindow from "../components/RouterWindow.vue";
-import logo from "../assets/logo/logo.png";
+
+import logo from "../assets/logo/GFGreenlogo.png";
+import banner from "../assets/Baners/баннер4.jpg";
 
 export default {
   name: "GFGreen",
@@ -32,6 +39,7 @@ export default {
     return {
       header: "Органические сладости",
       logo,
+      banner,
       mainRout: "/gfgreen",
       routs: [
         { rout: "/gfgreen/sweets", name: "конфеты" },
@@ -39,6 +47,12 @@ export default {
         { rout: "/gfgreen/dragee", name: "драже" },
       ],
     };
+  },
+  computed: {
+    checkRoute() {
+      if (this.$route.path == this.mainRout) return true;
+      else return false;
+    },
   },
 };
 </script>

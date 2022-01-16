@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="home">
-      <img alt="Vue logo" src="../assets/logo/logo.png" />
+    <div>
+      <img class="logo" alt="Vue logo" src="../assets/logo/GFlogo.png" />
     </div>
     <div>Как пользоваться каталогом:</div>
     <p>Сверху выбирете пункт меню.</p>
@@ -15,3 +15,10 @@ export default {
   name: "Home",
 };
 </script>
+
+<style lang="scss">
+//@import "../css/style.scss";
+.logo {
+  height: 10rem;
+}
+</style>

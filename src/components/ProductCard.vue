@@ -6,16 +6,16 @@
           <img
             class="goods__window_img"
             alt="Vue logo"
-            :src="productCard[idCard - 1].picture"
+            :src="choosePicture()"
           />
         </div>
         <div class="goods__window_right">
           <div class="goods__window_name">
-            {{ productCard[idCard - 1].text }}
+            {{ productCard.text }}
           </div>
           <div
             class="goods__window_description"
-            v-html="productCard[idCard - 1].description"
+            v-html="productCard.description"
           ></div>
         </div>
       </div>
@@ -28,11 +28,15 @@ export default {
   name: "ProductCard",
   props: {
     productCard: [],
-    idCard: Number,
   },
   methods: {
     changeShowProductCard() {
       this.$emit("closeWindow", false);
+    },
+    choosePicture() {
+      if (this.productCard.pictureMulti) {
+        return this.productCard.pictureMulti;
+      } else return this.productCard.picture;
     },
   },
 };

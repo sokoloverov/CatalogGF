@@ -1,10 +1,15 @@
 <template>
   <div>
-    <section-header :headerName="header" :logo="logo" />
+    <section-header
+      :headerName="header"
+      :logo="logo"
+      :banner="banner"
+      :ifShow="checkRoute"
+    />
     <div class="tmHeader__text">
       Самые крупные калибры, самые лучшие сорта орехов и сухофруктов из
       возможных. GOOD FOOD для всех, кто может себе позволить лучшее. Продукты
-      под маркой GOOD FOOD уже 26 лет являются эталоном лучшего из доступного на
+      под маркой GOOD FOOD уже 25 лет являются эталоном лучшего из доступного на
       отечественном рынке.
     </div>
     <router-window :routerlinks="routs" :logo="logo" :mainLink="mainRout" />
@@ -15,7 +20,9 @@
 <script>
 import SectionHeader from "../components/SectionHeader.vue";
 import RouterWindow from "../components/RouterWindow.vue";
-import logo from "../assets/logo/logo.png";
+
+import logo from "../assets/logo/GOOD-FOODlogo.png";
+import banner from "../assets/Baners/баннер1.jpg";
 
 export default {
   name: "GFGreen",
@@ -27,14 +34,21 @@ export default {
     return {
       header: "Лучшее из возможного",
       logo,
+      banner,
       mainRout: "/goodfood",
       routs: [
-        { rout: "/goodfood/nuts", name: "орехи" },
-        { rout: "/goodfood/driedfruits", name: "сухофрукты" },
+        { rout: "/goodfood/nuts", name: "орехи, семечки" },
+        { rout: "/goodfood/driedfruits", name: "сухофрукты, ягоды" },
         { rout: "/goodfood/mix", name: "смеси" },
         { rout: "/goodfood/dragee", name: "драже" },
       ],
     };
+  },
+  computed: {
+    checkRoute() {
+      if (this.$route.path == this.mainRout) return true;
+      else return false;
+    },
   },
 };
 </script>

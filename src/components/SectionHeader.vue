@@ -1,7 +1,12 @@
 <template>
   <div class="tmHeader">
-    <img class="tmHeader__header_img" alt="Vue logo" :src="logo" />
-    <div class="tmHeader__header">{{ headerName }}</div>
+    <div class="tmHeader__header">
+      <img class="tmHeader__header_img" alt="Vue logo" :src="logo" />
+      <div class="tmHeader__header_text">{{ headerName }}</div>
+    </div>
+    <div v-if="ifShow">
+      <img class="tmHeader__header_banner" alt="Vue logo" :src="banner" />
+    </div>
   </div>
 </template>
 
@@ -11,6 +16,8 @@ export default {
   props: {
     logo: String,
     headerName: String,
+    banner: String,
+    ifShow: Boolean,
   },
 };
 </script>

@@ -1,6 +1,11 @@
 <template>
   <div>
-    <section-header :headerName="header" :logo="logo" />
+    <section-header
+      :headerName="header"
+      :logo="logo"
+      :banner="banner"
+      :ifShow="checkRoute"
+    />
     <div class="tmHeader__text">
       Удобный и полезный перекус в любых ситуациях. Оптимальное соотношение цены
       и качества для требовательного потребителя.
@@ -13,7 +18,9 @@
 <script>
 import SectionHeader from "../components/SectionHeader.vue";
 import RouterWindow from "../components/RouterWindow.vue";
-import logo from "../assets/logo/logo.png";
+
+import logo from "../assets/logo/NUTBERRYlogo.png";
+import banner from "../assets/Baners/баннер3.jpg";
 
 export default {
   name: "Nutberry",
@@ -25,10 +32,11 @@ export default {
     return {
       header: "Оптимальное соотношение цены и качества",
       logo,
+      banner,
       mainRout: "/nutberry",
       routs: [
         { rout: "/nutberry/nuts", name: "орехи" },
-        { rout: "/nutberry/driedfruits", name: "сухофрукты" },
+        { rout: "/nutberry/driedfruits", name: "сухофрукты, ягоды" },
         { rout: "/nutberry/mix", name: "смеси" },
         { rout: "/nutberry/fruitbar", name: "фруктовые батончики" },
         {
@@ -39,6 +47,12 @@ export default {
         { rout: "/nutberry/pasta", name: "ореховая паста" },
       ],
     };
+  },
+  computed: {
+    checkRoute() {
+      if (this.$route.path == this.mainRout) return true;
+      else return false;
+    },
   },
 };
 </script>

@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+.logo {
+  height: 10rem;
+}
+
 /*ВИТРИНА ТОВАРОВ*/
 .goods__box {
   position: relative;
@@ -51,6 +55,13 @@
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
   color: darkgreen;
+  cursor: pointer;
+}
+
+.goods__box_a1 {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #9e0e32;
   cursor: pointer;
 }
 
@@ -140,8 +151,9 @@
 /*МЕНЮ РОУТЕРОВ*/
 .router__window {
   position: fixed;
-  top: 25%;
+  top: 20%;
   left: 2%;
+  min-width: 18%;
   background-color: white;
   -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
           box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
@@ -153,7 +165,7 @@
 }
 
 .router__window_img {
-  width: 25%;
+  height: 8rem;
   margin-top: 15%;
 }
 
@@ -163,6 +175,10 @@
   display: -ms-flexbox;
   display: flex;
   margin-left: 20%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -171,11 +187,25 @@
           justify-content: center;
 }
 
-.tmHeader__header_img {
-  height: 2.5rem;
+.tmHeader__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.tmHeader__header {
+.tmHeader__header_banner {
+  max-width: 90%;
+}
+
+.tmHeader__header_img {
+  height: 4rem;
+}
+
+.tmHeader__header_text {
   font-size: 2rem;
   padding: 0 2rem;
   text-align: center;

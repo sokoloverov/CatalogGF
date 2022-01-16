@@ -5,7 +5,8 @@
       <router-link to="/about">О компании</router-link> |
       <router-link to="/gfgreen">GF Green</router-link> |
       <router-link to="/goodfood">GOOD FOOD</router-link> |
-      <router-link to="/nutberry">NUTBERRY</router-link>
+      <router-link to="/nutberry">NUTBERRY</router-link> |
+      <router-link to="/vival">Виваль</router-link>
     </div>
     <router-view />
   </div>

@@ -37,7 +37,7 @@ export default {
   },
   data() {
     return {
-      header: "Орехи высших сортов",
+      header: "Орехи высших сортов и сушеные семечки",
       logo,
       gfGFnutsCards: [
         {
