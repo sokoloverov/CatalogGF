@@ -10,10 +10,10 @@ import ShowCase from "../components/ShowCase.vue";
 
 import logo from "../assets/logo/logo.png";
 
-import NBcornPeanat from "../assets/NUTBERRY/NBcorn/карамель-арахис.jpg";
-import NBcornAlmond from "../assets/NUTBERRY/NBcorn/карамель-миндаль.jpg";
-import NBcornCaramelSalt from "../assets/NUTBERRY/NBcorn/Попкорн_карамель-соль.jpg";
-import NBcornCaramel from "../assets/NUTBERRY/NBcorn/Попкорн-карамель.jpg";
+import NBcornPeanat from "../assets/NUTBERRY/NBcorn/NB-Попкорн-Карамель-с-арахисом.jpg";
+import NBcornAlmond from "../assets/NUTBERRY/NBcorn/NB-Попкорн-Карамель-с-миндалем.jpg";
+import NBcornCaramelSalt from "../assets/NUTBERRY/NBcorn/NB-Попкорн-Карамель-с-солью.jpg";
+import NBcornCaramel from "../assets/NUTBERRY/NBcorn/NB-Попкорн-Карамель.jpg";
 
 export default {
   name: "NutberryCorn",

@@ -10,7 +10,7 @@ import ShowCase from "../components/ShowCase.vue";
 
 import logo from "../assets/logo/logo.png";
 
-import NBMixNutsFruits40 from "../assets/NUTBERRY/NBmix/NBОрехи-и-ягоды-40.jpg";
+import NBMixNutsFruits50 from "../assets/NUTBERRY/NBmix/NBОрехи-и-ягоды50.jpg";
 import NBMixCashewCrunberry100 from "../assets/NUTBERRY/NBmix/NBСмесь-кешью-и-клюква-100.jpg";
 import NBMixNutsFruits100 from "../assets/NUTBERRY/NBmix/NBСмесь-орехи-и-фрукты-100.jpg";
 import NBMixNutsPineapple220 from "../assets/NUTBERRY/NBmix/NBСмесь-жареные-орехи-с-ананасом-и-изюмом-220.jpg";
@@ -31,8 +31,8 @@ export default {
       logo,
       NBmixCards: [
         {
-          picture: NBMixNutsFruits40,
-          text: "NUTBERRY Смесь орехи и ягоды 40 г",
+          picture: NBMixNutsFruits50,
+          text: "NUTBERRY Смесь орехи и ягоды 50 г",
           id: 4,
           description:
             "Состав: изюм (виноград  сушеный  без косточек, подсолнечное масло, консервант Е220), жареные ядра арахиса и фундука, клюква сушеная (клюква, сахар, подсолнечное масло, регулятор кислотности - лимонная кислота) в изменяемых соотношениях.<br>Продукт может содержать следы кунжута, других орехов.<br>Пищевая ценность в 100 г: Белки 13,6 г, Жиры 26,3 г, Углеводы 40,5<br>Энергетическая ценность 472 Ккал.<br>Хранить при температуре от +5°С до +25°С и относительной влажности воздуха не более 75 %.<br>ТУ 9164-002-60458573-15<br>Страна изготовитель: Россия",

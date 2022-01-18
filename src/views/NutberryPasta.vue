@@ -10,8 +10,8 @@ import ShowCase from "../components/ShowCase.vue";
 
 import logo from "../assets/logo/logo.png";
 
-import NBpastaMilk from "../assets/NUTBERRY/NBpasta/NB-shoko-pasta-milk.jpg";
-import NBpastaChoco from "../assets/NUTBERRY/NBpasta/NB-shoko-pasta.jpg";
+import NBpastaMilk from "../assets/NUTBERRY/NBpasta/NB-Паста-шоколадная-с-какао-и-молоком-350.jpg";
+import NBpastaChoco from "../assets/NUTBERRY/NBpasta/NB-Паста-ореховая-с-доб-какао-350-г.jpg";
 
 export default {
   name: "NutberryPasta",
