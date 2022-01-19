@@ -1,11 +1,11 @@
 <template>
   <div class="tmHeader">
+    <div v-if="ifShow">
+      <img class="tmHeader__header_banner" alt="Vue logo" :src="banner" />
+    </div>
     <div class="tmHeader__header">
       <img class="tmHeader__header_img" alt="Vue logo" :src="logo" />
       <div class="tmHeader__header_text">{{ headerName }}</div>
-    </div>
-    <div v-if="ifShow">
-      <img class="tmHeader__header_banner" alt="Vue logo" :src="banner" />
     </div>
   </div>
 </template>

@@ -4,7 +4,7 @@
       :headerName="header"
       :logo="logo"
       :banner="banner"
-      :ifShow="checkRoute"
+      :ifShow="true"
     />
     <div class="tmHeader__text">
       Сочетание натурального и одновременно вкусного продукта без компромиссов.
@@ -48,12 +48,12 @@ export default {
       ],
     };
   },
-  computed: {
-    checkRoute() {
-      if (this.$route.path == this.mainRout) return true;
-      else return false;
-    },
-  },
+  // computed: {
+  //   checkRoute() {
+  //     if (this.$route.path == this.mainRout) return true;
+  //     else return false;
+  //   },
+  // },
 };
 </script>
 

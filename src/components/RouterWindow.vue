@@ -2,9 +2,9 @@
   <div>
     <div class="router__window">
       <div @click="cleanMenuItem">
-        <router-link class="goods__box_a" :to="mainLink">
-          <img class="router__window_img" alt="Vue logo" :src="logo" />
-        </router-link>
+        <!-- <router-link class="goods__box_a" :to="mainLink"> -->
+        <img class="router__window_img" alt="Vue logo" :src="logo" />
+        <!-- </router-link> -->
       </div>
       <div
         class="router__window_link"
@@ -33,7 +33,7 @@ export default {
   },
   data() {
     return {
-      currentLink: "",
+      currentLink: this.routerlinks[0].name,
       order: "goods__box_a",
       order1: "goods__box_a1",
     };
@@ -41,11 +41,11 @@ export default {
   methods: {
     currentRouteName(link) {
       this.currentLink = link;
-      console.log(this.currentLink);
+      //console.log(this.currentLink);
     },
     cleanMenuItem() {
       this.currentLink = "";
-      console.log("hrr", this.currentLink);
+      //console.log("hrr", this.currentLink);
     },
   },
 };
