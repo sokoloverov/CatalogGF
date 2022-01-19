@@ -16,7 +16,7 @@ const routes = [
     component: () => import('../views/About.vue')
   },
   {
-    path: '/gfgreen',
+    path: '/gfgreen', redirect: '/gfgreen/sweets',
     name: 'GF Green',
     component: () => import('../views/GFGreen.vue'),
     children: [
@@ -38,7 +38,7 @@ const routes = [
     ]
   },
   {
-    path: '/goodfood',
+    path: '/goodfood', redirect: '/goodfood/nuts',
     name: 'GOOD FOOD',
     component: () => import('../views/GoodFood.vue'),
     children: [
@@ -65,7 +65,7 @@ const routes = [
     ]
   },
   {
-    path: '/nutberry',
+    path: '/nutberry', redirect: '/nutberry/nuts',
     name: 'NUTBERRY',
     component: () => import('../views/Nutberry.vue'),
     children: [
