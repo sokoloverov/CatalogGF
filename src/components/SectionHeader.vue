@@ -4,8 +4,8 @@
       <img class="tmHeader__header_banner" alt="Vue logo" :src="banner" />
     </div>
     <div class="tmHeader__header">
-      <img class="tmHeader__header_img" alt="Vue logo" :src="logo" />
-      <div class="tmHeader__header_text">{{ headerName }}</div>
+      <!-- <img class="tmHeader__header_img" alt="Vue logo" :src="logo" /> -->
+      <!-- <div class="tmHeader__header_text">{{ headerName }}</div> -->
     </div>
   </div>
 </template>
@@ -15,7 +15,6 @@ export default {
   name: "SectionHeader",
   props: {
     logo: String,
-    headerName: String,
     banner: String,
     ifShow: Boolean,
   },

@@ -1,14 +1,12 @@
 <template>
   <div>
-    <div class="tmHeader__header_small">{{ header }}</div>
+    <!-- <div class="tmHeader__header_small">{{ header }}</div> -->
     <show-case :sku="NBnutbarCards" />
   </div>
 </template>
 
 <script>
 import ShowCase from "../components/ShowCase.vue";
-
-import logo from "../assets/logo/logo.png";
 
 import NBbarNutCashew from "../assets/NUTBERRY/NBnutbar/NB-орехово-фруктовый-кешью.jpg";
 import NBbarNutMacadamia from "../assets/NUTBERRY/NBnutbar/NB-орехово-фруктовый-макадамия.jpg";
@@ -23,7 +21,6 @@ export default {
   data() {
     return {
       header: "Батончики на 100% из орехов, фруктов и семечек",
-      logo,
       NBnutbarCards: [
         {
           picture: NBbarNutCashew,

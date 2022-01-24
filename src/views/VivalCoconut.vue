@@ -1,14 +1,11 @@
 <template>
   <div>
-    <div class="tmHeader__header_small">{{ header }}</div>
     <show-case :sku="vivalCoconutCards" />
   </div>
 </template>
 
 <script>
 import ShowCase from "../components/ShowCase.vue";
-
-import logo from "../assets/logo/Vivallogo.png";
 
 import VivalCoconutAlmond from "../assets/Vival/Vcoconut/Кокос_с_миндалем_в_шоколадной_глазури_240г.jpg";
 import VivalCocountW from "../assets/Vival/Vcoconut/Кокос--белый-фото2.jpg";
@@ -22,8 +19,6 @@ export default {
   },
   data() {
     return {
-      header: "Кокосовые конфеты",
-      logo,
       vivalCoconutCards: [
         {
           picture: VivalCoconutAlmond,

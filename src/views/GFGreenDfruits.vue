@@ -1,14 +1,12 @@
 <template>
   <div>
-    <div class="tmHeader__header_small">{{ header }}</div>
+    <!-- <div class="tmHeader__header_small">{{ header }}</div> -->
     <show-case :sku="gfGreenDfruitsCards" />
   </div>
 </template>
 
 <script>
 import ShowCase from "../components/ShowCase.vue";
-
-import logo from "../assets/logo/logo.png";
 
 import GreenDFapricot from "../assets/GFGreen/GFGreenDF/GF_Green_конфеты_абрикос_в_шоколаде_front.jpg";
 import GreenDFbanana from "../assets/GFGreen/GFGreenDF/GF_Green_конфеты_банан_в_шоколаде_front.jpg";
@@ -21,7 +19,6 @@ export default {
   data() {
     return {
       header: "Сухофрукты в шоколаде",
-      logo,
       gfGreenDfruitsCards: [
         {
           picture: GreenDFapricot,

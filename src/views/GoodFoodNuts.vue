@@ -1,14 +1,12 @@
 <template>
   <div>
-    <div class="tmHeader__header_small">{{ header }}</div>
+    <!-- <div class="tmHeader__header_small">{{ header }}</div> -->
     <show-case :sku="gfGFnutsCards" />
   </div>
 </template>
 
 <script>
 import ShowCase from "../components/ShowCase.vue";
-
-import logo from "../assets/logo/logo.png";
 
 import GFpeanutRHS from "../assets/GOODFOOD/GFNuts/Арахис-жар.-с-медом-и-кунжутом.jpg";
 import GFpeanutRwS from "../assets/GOODFOOD/GFNuts/Арахис-жареный-соленый.jpg";
@@ -38,7 +36,6 @@ export default {
   data() {
     return {
       header: "Орехи высших сортов и сушеные семечки",
-      logo,
       gfGFnutsCards: [
         {
           picture: GFpeanutRHS,

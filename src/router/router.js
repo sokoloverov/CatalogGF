@@ -6,7 +6,7 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/', redirect: '/about',
     name: 'Home',
     component: Home
   },
@@ -107,7 +107,7 @@ const routes = [
     ]
   },
   {
-    path: '/vival',
+    path: '/vival', redirect: '/vival/coconutsweets',
     name: 'Виваль',
     component: () => import('../views/Vival.vue'),
     children: [
@@ -121,11 +121,11 @@ const routes = [
         name: 'Виваль десертные конфеты',
         component: () => import('../views/VivalDesserts.vue')
       },
-      {
-        path: 'dragee',
-        name: 'Виваль драже',
-        component: () => import('../views/VivalDragee.vue')
-      },
+      // {
+      //   path: 'dragee',
+      //   name: 'Виваль драже',
+      //   component: () => import('../views/VivalDragee.vue')
+      // },
       {
         path: 'fruitsweets',
         name: 'Виваль фруктовые конфеты',

@@ -1,14 +1,12 @@
 <template>
   <div>
-    <div class="tmHeader__header_small">{{ header }}</div>
+    <!-- <div class="tmHeader__header_small">{{ header }}</div> -->
     <show-case :sku="NBcornCards" />
   </div>
 </template>
 
 <script>
 import ShowCase from "../components/ShowCase.vue";
-
-import logo from "../assets/logo/logo.png";
 
 import NBcornPeanat from "../assets/NUTBERRY/NBcorn/NB-Попкорн-Карамель-с-арахисом.jpg";
 import NBcornAlmond from "../assets/NUTBERRY/NBcorn/NB-Попкорн-Карамель-с-миндалем.jpg";
@@ -23,7 +21,6 @@ export default {
   data() {
     return {
       header: "Попкорн высшего качества",
-      logo,
       NBcornCards: [
         {
           picture: NBcornPeanat,

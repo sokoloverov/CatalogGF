@@ -1,11 +1,6 @@
 <template>
   <div>
-    <section-header
-      :headerName="header"
-      :logo="logo"
-      :banner="banner"
-      :ifShow="true"
-    />
+    <section-header :logo="logo" :banner="banner" :ifShow="true" />
     <div class="tmHeader__text">
       Сочетание натурального и одновременно вкусного продукта без компромиссов.
       Используются только сухофрукты без консервантов, прошедшие проверку в
@@ -17,7 +12,12 @@
       смысле этого термина, продукт, не имеющее пока на российском рынке прямых
       аналогов.
     </div>
-    <router-window :routerlinks="routs" :logo="logo" :mainLink="mainRout" />
+    <router-window
+      :routerlinks="routs"
+      :logo="logo"
+      :mainLink="mainRout"
+      :headerName="header"
+    />
     <router-view />
   </div>
 </template>
@@ -48,12 +48,6 @@ export default {
       ],
     };
   },
-  // computed: {
-  //   checkRoute() {
-  //     if (this.$route.path == this.mainRout) return true;
-  //     else return false;
-  //   },
-  // },
 };
 </script>
 

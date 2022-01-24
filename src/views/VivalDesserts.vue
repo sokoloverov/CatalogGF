@@ -1,14 +1,11 @@
 <template>
   <div>
-    <div class="tmHeader__header_small">{{ header }}</div>
     <show-case :sku="vivalDessertCards" />
   </div>
 </template>
 
 <script>
 import ShowCase from "../components/ShowCase.vue";
-
-import logo from "../assets/logo/Vivallogo.png";
 
 import VivalDessertBanana from "../assets/Vival/Vdessert/десертные-конфеты-банан.jpg";
 import VivalDessertDate from "../assets/Vival/Vdessert/десертные-конфеты-финик.jpg";
@@ -21,8 +18,6 @@ export default {
   },
   data() {
     return {
-      header: "Десертные конфеты",
-      logo,
       vivalDessertCards: [
         {
           picture: VivalDessertBanana,

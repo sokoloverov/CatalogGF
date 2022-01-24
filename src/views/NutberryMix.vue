@@ -1,14 +1,12 @@
 <template>
   <div>
-    <div class="tmHeader__header_small">{{ header }}</div>
+    <!-- <div class="tmHeader__header_small">{{ header }}</div> -->
     <show-case :sku="NBmixCards" />
   </div>
 </template>
 
 <script>
 import ShowCase from "../components/ShowCase.vue";
-
-import logo from "../assets/logo/logo.png";
 
 import NBMixNutsFruits50 from "../assets/NUTBERRY/NBmix/NBОрехи-и-ягоды50.jpg";
 import NBMixCashewCrunberry100 from "../assets/NUTBERRY/NBmix/NBСмесь-кешью-и-клюква-100.jpg";
@@ -28,7 +26,6 @@ export default {
   data() {
     return {
       header: "Смеси орехов, сухофруктов и ягод",
-      logo,
       NBmixCards: [
         {
           picture: NBMixNutsFruits50,

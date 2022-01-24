@@ -1,14 +1,11 @@
 <template>
   <div>
-    <div class="tmHeader__header_small">{{ header }}</div>
     <show-case :sku="vivalDrageeCards" />
   </div>
 </template>
 
 <script>
 import ShowCase from "../components/ShowCase.vue";
-
-import logo from "../assets/logo/Vivallogo.png";
 
 import VivalDrageeAlmond from "../assets/Vival/Vdragee/Драже_Миндаль_в_белой_шг_140г.jpg";
 import VivalDrageePhista from "../assets/Vival/Vdragee/Драже_Фисташка_трюфель_120г.jpg";
@@ -22,8 +19,6 @@ export default {
   },
   data() {
     return {
-      header: "Драже в шоколадной глазури",
-      logo,
       vivalDrageeCards: [
         {
           picture: VivalDrageeAlmond,

@@ -1,18 +1,15 @@
 <template>
   <div>
-    <section-header
-      :headerName="header"
-      :logo="logo"
-      :banner="banner"
-      :ifShow="checkRoute"
-    />
+    <section-header :logo="logo" :banner="banner" :ifShow="true" />
     <div class="tmHeader__text">
       Шоколадные конфеты с нутарльными ингредиентами для настоящих ценителей.
     </div>
-    <router-window :routerlinks="routs" :logo="logo" :mainLink="mainRout" />
-    <!-- <div v-if="checkRoute">
-      <img class="tmHeader__header_banner" alt="Vue logo" :src="banner" />
-    </div> -->
+    <router-window
+      :routerlinks="routs"
+      :logo="logo"
+      :mainLink="mainRout"
+      :headerName="header"
+    />
     <router-view />
   </div>
 </template>
@@ -22,7 +19,7 @@ import SectionHeader from "../components/SectionHeader.vue";
 import RouterWindow from "../components/RouterWindow.vue";
 
 import logo from "../assets/logo/Vivallogo.png";
-import banner from "../assets/Baners/баннер2.jpg";
+import banner from "../assets/Baners/баннер4.jpg";
 
 export default {
   name: "Vival",
@@ -39,17 +36,11 @@ export default {
       routs: [
         { rout: "/vival/fruitsweets", name: "фруктовые конфеты" },
         { rout: "/vival/coconutsweets", name: "кокосовые конфеты" },
-        { rout: "/vival/dragee", name: "конфеты драже" },
+        // { rout: "/vival/dragee", name: "конфеты драже" },
         { rout: "/vival/jelly", name: "фруктово-желейные конфеты" },
         { rout: "/vival/dessert", name: "десертные конфеты" },
       ],
     };
-  },
-  computed: {
-    checkRoute() {
-      if (this.$route.path == this.mainRout) return true;
-      else return false;
-    },
   },
 };
 </script>

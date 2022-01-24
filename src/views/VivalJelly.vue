@@ -1,14 +1,11 @@
 <template>
   <div>
-    <div class="tmHeader__header_small">{{ header }}</div>
     <show-case :sku="vivalJellyCards" />
   </div>
 </template>
 
 <script>
 import ShowCase from "../components/ShowCase.vue";
-
-import logo from "../assets/logo/Vivallogo.png";
 
 import VivalJellyApricot from "../assets/Vival/Vjelly/ФЖК_Абрикос175.jpg";
 import VivalJellyApricotCr from "../assets/Vival/Vjelly/ФЖК-Абрикос-клюква175.jpg";
@@ -23,8 +20,6 @@ export default {
   },
   data() {
     return {
-      header: "Фруктово-желейные конфеты",
-      logo,
       vivalJellyCards: [
         {
           picture: VivalJellyApricot,

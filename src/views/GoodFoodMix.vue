@@ -1,14 +1,12 @@
 <template>
   <div>
-    <div class="tmHeader__header_small">{{ header }}</div>
+    <!-- <div class="tmHeader__header_small">{{ header }}</div> -->
     <show-case :sku="gfGFmixCards" />
   </div>
 </template>
 
 <script>
 import ShowCase from "../components/ShowCase.vue";
-
-import logo from "../assets/logo/logo.png";
 
 import GFMixNutsAndRaisin from "../assets/GOODFOOD/GFmix/Смесь-Орехов-и-Изюма.jpg";
 import GFMixNuts from "../assets/GOODFOOD/GFmix/Смесь-Ореховая.jpg";
@@ -24,7 +22,6 @@ export default {
   data() {
     return {
       header: "Смеси орехов, сухофруктов и ягод",
-      logo,
       gfGFmixCards: [
         {
           picture: GFMixNutsAndRaisin,

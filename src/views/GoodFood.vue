@@ -1,18 +1,18 @@
 <template>
   <div>
-    <section-header
-      :headerName="header"
-      :logo="logo"
-      :banner="banner"
-      :ifShow="checkRoute"
-    />
+    <section-header :logo="logo" :banner="banner" :ifShow="true" />
     <div class="tmHeader__text">
       Самые крупные калибры, самые лучшие сорта орехов и сухофруктов из
       возможных. GOOD FOOD для всех, кто может себе позволить лучшее. Продукты
       под маркой GOOD FOOD уже 25 лет являются эталоном лучшего из доступного на
       отечественном рынке.
     </div>
-    <router-window :routerlinks="routs" :logo="logo" :mainLink="mainRout" />
+    <router-window
+      :routerlinks="routs"
+      :logo="logo"
+      :mainLink="mainRout"
+      :headerName="header"
+    />
     <router-view />
   </div>
 </template>
@@ -22,7 +22,7 @@ import SectionHeader from "../components/SectionHeader.vue";
 import RouterWindow from "../components/RouterWindow.vue";
 
 import logo from "../assets/logo/GOOD-FOODlogo.png";
-import banner from "../assets/Baners/баннер1.jpg";
+import banner from "../assets/Baners/баннер4.jpg";
 
 export default {
   name: "GFGreen",
@@ -44,12 +44,12 @@ export default {
       ],
     };
   },
-  computed: {
-    checkRoute() {
-      if (this.$route.path == this.mainRout) return true;
-      else return false;
-    },
-  },
+  // computed: {
+  //   checkRoute() {
+  //     if (this.$route.path == this.mainRout) return true;
+  //     else return false;
+  //   },
+  // },
 };
 </script>
 

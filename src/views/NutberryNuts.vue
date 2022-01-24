@@ -1,14 +1,12 @@
 <template>
   <div>
-    <div class="tmHeader__header_small">{{ header }}</div>
+    <!-- <div class="tmHeader__header_small">{{ header }}</div> -->
     <show-case :sku="NutberryNutsCards" />
   </div>
 </template>
 
 <script>
 import ShowCase from "../components/ShowCase.vue";
-
-import logo from "../assets/logo/logo.png";
 
 import NBpeanutRS100 from "../assets/NUTBERRY/NBnuts/NBАрахис-ж.с-100.jpg";
 import NBwalnut100 from "../assets/NUTBERRY/NBnuts/NBГрецкий-орех-100.jpg";
@@ -37,7 +35,6 @@ export default {
   data() {
     return {
       header: "Орехи оптимального качества",
-      logo,
       NutberryNutsCards: [
         {
           picture: NBpeanutRS100,

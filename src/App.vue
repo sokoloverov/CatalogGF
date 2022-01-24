@@ -1,16 +1,56 @@
+/* eslint-disable no-undef */
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Навигация</router-link> |
-      <router-link to="/about">О компании</router-link> |
-      <router-link to="/gfgreen">GF Green</router-link> |
-      <router-link to="/goodfood">GOOD FOOD</router-link> |
-      <router-link to="/nutberry">NUTBERRY</router-link> |
-      <router-link to="/vival">Виваль</router-link>
-    </div>
-    <router-view />
+  <div id="app" @click="clickCheck()">
+    <transition name="fade" mode="out-in" appear>
+      <div v-if="check" key="main">
+        <div id="nav">
+          <!-- <router-link to="/">Навигация</router-link> | -->
+          <router-link to="/about">О компании</router-link> |
+          <router-link to="/gfgreen">GF Green</router-link> |
+          <router-link to="/goodfood">GOOD FOOD</router-link> |
+          <router-link to="/nutberry">NUTBERRY</router-link> |
+          <router-link to="/vival">Виваль</router-link>
+        </div>
+        <router-view />
+      </div>
+      <div v-else key="saver">
+        <screen-saver />
+      </div>
+    </transition>
   </div>
 </template>
+
+<script>
+import ScreenSaver from "./components/ScreenSaver.vue";
+
+export default {
+  name: "App",
+  components: {
+    ScreenSaver,
+  },
+  data() {
+    return {
+      check: false,
+    };
+  },
+  methods: {
+    clickCheck() {
+      this.check = true;
+
+      let highestTimeoutId = setTimeout(";");
+      for (let i = 0; i < highestTimeoutId; i++) {
+        clearTimeout(i);
+      }
+
+      setTimeout(this.go, 20000);
+    },
+    go() {
+      //включение скринсевера!
+      //this.check = false;
+    },
+  },
+};
+</script>
 
 <style lang="scss">
 #app {
@@ -20,17 +60,31 @@
   text-align: center;
   color: #2c3e50;
 }
-
 #nav {
   padding: 30px;
-
   a {
+    font-size: 1.2rem;
     font-weight: bold;
     color: #2c3e50;
-
     &.router-link-exact-active {
       color: #42b983;
     }
   }
+}
+.banner {
+  height: 860px;
+  width: 1530px;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 1.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+.fade-enter-to,
+.fade-leave {
+  opacity: 1;
 }
 </style>

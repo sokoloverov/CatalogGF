@@ -1,14 +1,12 @@
 <template>
   <div>
-    <div class="tmHeader__header_small">{{ header }}</div>
+    <!-- <div class="tmHeader__header_small">{{ header }}</div> -->
     <show-case :sku="NBpastaCards" />
   </div>
 </template>
 
 <script>
 import ShowCase from "../components/ShowCase.vue";
-
-import logo from "../assets/logo/logo.png";
 
 import NBpastaMilk from "../assets/NUTBERRY/NBpasta/NB-Паста-шоколадная-с-какао-и-молоком-350.jpg";
 import NBpastaChoco from "../assets/NUTBERRY/NBpasta/NB-Паста-ореховая-с-доб-какао-350-г.jpg";
@@ -21,7 +19,6 @@ export default {
   data() {
     return {
       header: "Ореховая паста с добавлением какао",
-      logo,
       NBpastaCards: [
         {
           picture: NBpastaMilk,

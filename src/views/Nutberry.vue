@@ -1,16 +1,16 @@
 <template>
   <div>
-    <section-header
-      :headerName="header"
-      :logo="logo"
-      :banner="banner"
-      :ifShow="checkRoute"
-    />
+    <section-header :logo="logo" :banner="banner" :ifShow="true" />
     <div class="tmHeader__text">
       Удобный и полезный перекус в любых ситуациях. Оптимальное соотношение цены
       и качества для требовательного потребителя.
     </div>
-    <router-window :routerlinks="routs" :logo="logo" :mainLink="mainRout" />
+    <router-window
+      :routerlinks="routs"
+      :logo="logo"
+      :mainLink="mainRout"
+      :headerName="header"
+    />
     <router-view />
   </div>
 </template>
@@ -20,7 +20,7 @@ import SectionHeader from "../components/SectionHeader.vue";
 import RouterWindow from "../components/RouterWindow.vue";
 
 import logo from "../assets/logo/NUTBERRYlogo.png";
-import banner from "../assets/Baners/баннер3.jpg";
+import banner from "../assets/Baners/баннер4.jpg";
 
 export default {
   name: "Nutberry",
@@ -47,12 +47,6 @@ export default {
         { rout: "/nutberry/pasta", name: "ореховая паста" },
       ],
     };
-  },
-  computed: {
-    checkRoute() {
-      if (this.$route.path == this.mainRout) return true;
-      else return false;
-    },
   },
 };
 </script>

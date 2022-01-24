@@ -1,14 +1,12 @@
 <template>
   <div>
-    <div class="tmHeader__header_small">{{ header }}</div>
+    <!-- <div class="tmHeader__header_small">{{ header }}</div> -->
     <show-case :sku="NBdriedfruitsCards" />
   </div>
 </template>
 
 <script>
 import ShowCase from "../components/ShowCase.vue";
-
-import logo from "../assets/logo/logo.png";
 
 import NBapricot from "../assets/NUTBERRY/NBdf/NB-Абрикос-190.jpg";
 import NBprunes from "../assets/NUTBERRY/NBdf/NB-Чернослив-280.jpg";
@@ -25,7 +23,6 @@ export default {
   data() {
     return {
       header: "Сухофрукты и сушёные ягоды",
-      logo,
       NBdriedfruitsCards: [
         {
           picture: NBapricot,
