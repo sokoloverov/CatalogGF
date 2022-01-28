@@ -17,7 +17,7 @@
           :class="chooseQuantity() > 1 ? width40 : width60"
         >
           <div class="goods__window_name">
-            {{ productCard.text }}
+            <span v-html="productCard.text"></span>
           </div>
           <div
             class="goods__window_description"

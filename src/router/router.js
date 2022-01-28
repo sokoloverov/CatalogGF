@@ -139,6 +139,28 @@ const routes = [
     ]
   },
   {
+    path: '/sante', redirect: '/sante/mueslibar',
+    name: 'Sante',
+    component: () => import('../views/Sante.vue'),
+    children: [
+      {
+        path: 'mueslibar',
+        name: 'Sante батончики мюсли',
+        component: () => import('../views/SanteBar.vue')
+      },
+      {
+        path: 'readybreakfast',
+        name: 'Sante готовые завтраки',
+        component: () => import('../views/SanteBreakfast.vue')
+      },
+      {
+        path: 'bread',
+        name: 'Sante пресные хлебцы',
+        component: () => import('../views/SanteBread.vue')
+      },
+    ]
+  },
+  {
     path: '*',
     redirect: '/'
   },

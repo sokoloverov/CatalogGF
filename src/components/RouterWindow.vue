@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="router__window">
-      <div @click="cleanMenuItem">
+      <div>
         <img class="router__window_img" alt="Vue logo" :src="logo" />
         <div class="router__window_textCategory router__window_overflows">
           {{ headerName }}
@@ -44,9 +44,9 @@ export default {
     currentRouteName(link) {
       this.currentLink = link;
     },
-    cleanMenuItem() {
-      this.currentLink = "";
-    },
+    // cleanMenuItem() {
+    //   this.currentLink = "";
+    // },
   },
 };
 </script>
@@ -69,7 +69,7 @@ export default {
   text-transform: uppercase;
 }
 .router__window_img {
-  height: 8rem;
+  width: 10vw;
   margin-top: 15%;
 }
 .router__window_textCategory {

@@ -9,7 +9,7 @@
         >
           <a class="goods__box_a" @click="modalView(product)">
             <img class="goods__box_img" alt="Vue logo" :src="product.picture" />
-            <p class="goods__box_name">{{ product.text }}</p>
+            <p class="goods__box_name"><span v-html="product.text"></span></p>
           </a>
         </div>
       </div>

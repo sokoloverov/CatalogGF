@@ -22,5 +22,39 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../css/style.scss";
+/*ЗАГОЛОВОК РАЗДЕЛА*/
+.tmHeader {
+  display: flex;
+  margin-left: 20%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tmHeader__header {
+  display: flex;
+  flex-direction: row;
+}
+.tmHeader__header_banner {
+  max-width: 90%;
+}
+.tmHeader__header_img {
+  height: 4rem;
+}
+.tmHeader__header_text {
+  font-size: 2rem;
+  padding: 0 2rem;
+  text-align: center;
+}
+.tmHeader__header_small {
+  margin-left: 20%;
+  font-size: 1rem;
+  text-align: center;
+}
+.tmHeader__text {
+  margin-left: 20%;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  padding: 1rem 3rem;
+  text-align: justify;
+}
 </style>

@@ -9,7 +9,8 @@
           <router-link to="/gfgreen">GF Green</router-link> |
           <router-link to="/goodfood">GOOD FOOD</router-link> |
           <router-link to="/nutberry">NUTBERRY</router-link> |
-          <router-link to="/vival">Виваль</router-link>
+          <router-link to="/vival">Виваль</router-link> |
+          <router-link to="/sante">Sante</router-link>
         </div>
         <router-view />
       </div>
@@ -42,11 +43,11 @@ export default {
         clearTimeout(i);
       }
 
-      setTimeout(this.go, 20000);
+      setTimeout(this.go, 180000);
     },
     go() {
       //включение скринсевера!
-      //this.check = false;
+      this.check = false;
     },
   },
 };
@@ -65,9 +66,9 @@ export default {
   a {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+    color: #175ba0;
+    &.router-link-active {
+      color: #1e915d;
     }
   }
 }
