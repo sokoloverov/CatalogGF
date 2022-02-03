@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- <fall-animation /> -->
     <div class="router__window">
       <div>
         <img class="router__window_img" alt="Vue logo" :src="logo" />
@@ -25,8 +26,13 @@
 </template>
 
 <script>
+// import FallAnimation from "./FallAnimation.vue";
+
 export default {
   name: "RouterWindow",
+  components: {
+    // FallAnimation,
+  },
   props: {
     logo: String,
     mainLink: String,
@@ -75,27 +81,27 @@ export default {
 .router__window_textCategory {
   width: 80%;
   margin: 1rem auto;
-  color: rgb(1, 1, 82);
+  color: #003897;
   text-transform: uppercase;
   line-height: 1.5rem;
   font-weight: 900;
 }
 .router__link_passive {
   text-decoration-line: none;
-  color: darkgreen;
+  color: #3dae2b;
   cursor: pointer;
 }
 .router__link_active {
   position: relative;
   display: inline-block;
   text-decoration-line: none;
-  color: rgb(158, 14, 50);
+  color: #ed302f;
   font-weight: 700;
   padding: 1rem 0;
   cursor: pointer;
   width: 17vw;
   height: 0.9rem;
-  border: 3px solid red;
+  border: 3px solid #ed302f;
   border-radius: 5px;
   box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
 }

@@ -1,7 +1,12 @@
 <template>
   <div>
-    <section-header :logo="logo" :banner="banner" :ifShow="true" />
-    <div class="tmHeader__text">
+    <section-header
+      :logo="logo"
+      :banner="checkRoute"
+      :ifShow="true"
+      :headerText="description"
+    />
+    <!-- <div class="tmHeader__text">
       Самые крупные калибры, самые лучшие сорта орехов и сухофруктов из
       возможных. Линия продуктов для всех, кто может себе позволить платить за
       качество. Продукты под маркой GOOD FOOD уже 25 лет являются эталоном
@@ -14,7 +19,7 @@
       закупает ингреиенты с содержанием искуственных красителей или с
       превышением норм по сернистому ангидриду. Указаны реалистичные сроки
       годности.
-    </div>
+    </div> -->
     <router-window
       :routerlinks="routs"
       :logo="logo"
@@ -30,7 +35,7 @@ import SectionHeader from "../components/SectionHeader.vue";
 import RouterWindow from "../components/RouterWindow.vue";
 
 import logo from "../assets/logo/GOOD-FOODlogo.jpg";
-import banner from "../assets/Baners/баннер4.jpg";
+import banner0 from "../assets/Baners/Good_Food-2.jpg";
 
 export default {
   name: "GFGreen",
@@ -41,8 +46,10 @@ export default {
   data() {
     return {
       header: "Лучшее из возможного",
+      description:
+        "Самые крупные калибры, самые лучшие сорта орехов и сухофруктов из возможных. Линия продуктов для всех, кто может себе позволить платить за качество. Продукты под маркой GOOD FOOD уже 25 лет являются эталоном лучшего из доступного на отечественном рынке. Основная часть орехов и сухофруктов поступает напрямую от сертифицированных производителей, имеющих международные сертификаты пищевой безопасности. Все ингредиенты проходят трёхступенчатый контроль качества сырья и соотвествия сопроводительной документации. ГУД-ФУД - одна из немногих отечественных компаний предъявляет повышенные требования к исходному сырью. Например, не закупает ингреиенты с содержанием искуственных красителей или с превышением норм по сернистому ангидриду. Указаны реалистичные сроки годности.",
       logo,
-      banner,
+      banner0,
       mainRout: "/goodfood",
       routs: [
         { rout: "/goodfood/nuts", name: "орехи, семечки" },
@@ -52,12 +59,22 @@ export default {
       ],
     };
   },
-  // computed: {
-  //   checkRoute() {
-  //     if (this.$route.path == this.mainRout) return true;
-  //     else return false;
-  //   },
-  // },
+  computed: {
+    checkRoute() {
+      switch (this.$route.path) {
+        case "/goodfood/nuts":
+          return banner0;
+        case "/goodfood/driedfruits":
+          return banner0;
+        case "/goodfood/mix":
+          return banner0;
+        case "/goodfood/dragee":
+          return banner0;
+        default:
+          return banner0;
+      }
+    },
+  },
 };
 </script>
 

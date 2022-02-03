@@ -4,7 +4,7 @@
       <img
         class="navigation_img"
         alt="Vue logo"
-        src="../assets/Baners/баннер3.jpg"
+        src="../assets/Baners/Good_Food_3.2.jpg"
       />
     </div>
     <div class="navigation_text">

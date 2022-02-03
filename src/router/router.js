@@ -107,7 +107,7 @@ const routes = [
     ]
   },
   {
-    path: '/vival', redirect: '/vival/coconutsweets',
+    path: '/vival', redirect: '/vival/fruitsweets',
     name: 'Виваль',
     component: () => import('../views/Vival.vue'),
     children: [

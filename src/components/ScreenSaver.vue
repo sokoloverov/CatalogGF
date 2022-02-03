@@ -1,22 +1,16 @@
 <template>
   <div class="back">
     <div class="logo_position">
-      <img class="logo" alt="Vue logo" src="../assets/logo/GFlogo.png" />
+      <img
+        class="logo neonText"
+        alt="Vue logo"
+        src="../assets/logo/GFlogo1.png"
+      />
     </div>
-
-    <svg viewBox="0 0 960 300">
-      <symbol id="s-text">
-        <text text-anchor="middle" x="50%" y="80%">ГУД-ФУД</text>
-      </symbol>
-
-      <g class="g-ants">
-        <use xlink:href="#s-text" class="text-copy"></use>
-        <use xlink:href="#s-text" class="text-copy"></use>
-        <use xlink:href="#s-text" class="text-copy"></use>
-        <use xlink:href="#s-text" class="text-copy"></use>
-        <use xlink:href="#s-text" class="text-copy"></use>
-      </g>
-    </svg>
+    <div class="catalog">КАТАЛОГ<span class="flare"></span></div>
+    <div class="pulse">
+      <img class="hand" alt="Vue logo" src="../assets/logo/1-01.png" />
+    </div>
   </div>
 </template>
 
@@ -29,63 +23,152 @@ export default {
 <style lang="scss" scoped>
 .back {
   height: 100vh;
-  font-weight: 800;
-  background: #31319b;
+  background: url("../assets/Baners/Good_Food-главный-фон.jpg");
+  background-size: 100%;
 }
 .logo_position {
   padding-top: 5rem;
 }
 .logo {
-  height: 10rem;
+  height: 30rem;
 }
-
-svg {
-  display: block;
-  //font: 10.5em "Montserrat";
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 11rem;
-  width: 80%;
-  letter-spacing: 0.5rem;
-  margin: 0 auto;
+.neonText {
+  animation: shadowAnimation 5s infinite;
 }
-
-.text-copy {
-  fill: none;
-  stroke: white;
-  stroke-dasharray: 6% 29%;
-  stroke-width: 0.5rem;
-  stroke-dashoffset: 0%;
-  animation: stroke-offset 5.5s infinite linear;
-}
-
-.text-copy:nth-child(1) {
-  stroke: #010981;
-  animation-delay: -1s;
-}
-
-.text-copy:nth-child(2) {
-  stroke: #840037;
-  animation-delay: -2s;
-}
-
-.text-copy:nth-child(3) {
-  stroke: #47b81a;
-  animation-delay: -3s;
-}
-
-.text-copy:nth-child(4) {
-  stroke: rgb(238, 3, 34);
-  animation-delay: -4s;
-}
-
-.text-copy:nth-child(5) {
-  stroke: #ffffff;
-  animation-delay: -5s;
-}
-
-@keyframes stroke-offset {
+@keyframes shadowAnimation {
+  0% {
+    filter: drop-shadow(0 0 3rem rgb(255, 255, 255));
+  }
+  50% {
+    filter: drop-shadow(0 0 3rem rgb(110, 110, 110));
+  }
   100% {
-    stroke-dashoffset: -35%;
+    filter: drop-shadow(0 0 3rem rgb(255, 255, 255));
+  }
+}
+.pulse {
+  position: absolute; // Нужно будет в будущем, для позиционирования эффекта
+  text-align: center;
+  padding: 1rem; // Отступ можете подобрать свой.
+  border-radius: 50%; // Делаем икноку круглой
+  background: #003897;
+  width: 3rem;
+  height: 3rem;
+  z-index: 0;
+  animation: handMovie 20s linear infinite;
+  animation-direction: alternate-reverse;
+}
+.pulse::after,
+.pulse::before {
+  content: ""; // Нужно для отображения псевдокласса
+  position: absolute;
+  border: 0.1rem solid #003897; // Ширину обводки можете выбрать сами
+  left: -1rem;
+  opacity: 0;
+  right: -1rem;
+  top: -1rem;
+  bottom: -1rem;
+  border-radius: 50%;
+  z-index: -1;
+  animation: pulse 2.5s linear infinite; // Указываем название анимации, время, тип, и нужно ли её повторять
+}
+.pulse::after {
+  animation-delay: 1.25s;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+@keyframes handMovie {
+  0% {
+    top: 45vh;
+    left: 2vw;
+  }
+  25% {
+    top: 55vh;
+    left: 22.5vw;
+  }
+  50% {
+    top: 65vh;
+    left: 45vw;
+  }
+  75% {
+    top: 55vh;
+    left: 67.5vw;
+  }
+  100% {
+    top: 45vh;
+    left: 90vw;
+  }
+}
+.hand {
+  position: absolute;
+  left: -2.7rem;
+  top: 1.7rem;
+  height: 17rem;
+  z-index: 10;
+  animation: handSkew 7s linear infinite;
+}
+@keyframes handSkew {
+  0% {
+    transform: skewX(0deg);
+  }
+  25% {
+    transform: skewX(3deg);
+  }
+  50% {
+    transform: skewX(0deg);
+  }
+  75% {
+    transform: skewX(-3deg);
+  }
+  100% {
+    transform: skewX(0deg);
+  }
+}
+.catalog {
+  margin-top: 7rem;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  background: #003897;
+  color: #ffffff;
+  font-size: 6rem;
+  font-weight: 800;
+  letter-spacing: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flare {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 4rem;
+  transform: skewX(-45deg); // Наклон
+  animation: flareAnimation;
+  left: -150%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.4)
+  );
+  animation: flareAnimation 5s infinite linear;
+}
+@keyframes flareAnimation {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 150%;
   }
 }
 </style>

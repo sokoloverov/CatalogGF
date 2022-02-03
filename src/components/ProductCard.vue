@@ -61,7 +61,6 @@ export default {
 </script>
 
 <style lang="scss">
-//@import "../css/style.scss";
 /*МОДАЛЬНОЕ ОКНО*/
 .goods__window {
   position: fixed;
@@ -136,10 +135,10 @@ export default {
   background-position: 0 0, 100% 0, 100% 100%, 0 100%;
   // background-image: linear-gradient(#ffffff, #ffffff),
   //   linear-gradient(#333dd6, #333dd6), linear-gradient(#ffffff, #ffffff)
-  background-image: linear-gradient(#c4c8f8, #333dd6),
-    linear-gradient(#ffffff, #ffffff), linear-gradient(#f59b9b, #be1515);
+  background-image: linear-gradient(#ffffff, #2b559c),
+    linear-gradient(#ffffff, #ffffff), linear-gradient(#ffffff, #ed302f);
 
-  animation: anim-ramka 20s linear infinite;
+  animation: anim-ramka 45s linear infinite;
 }
 .goods__window_ramka::after {
   content: "";
