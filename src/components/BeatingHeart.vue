@@ -190,7 +190,7 @@
         attributeName="transform"
         type="scale"
         values="1; 1.5; 1.25; 1.5; 1.5; 1;"
-        dur="1.5s"
+        dur="2.0s"
         repeatCount="indefinite"
         additive="sum"
       ></animateTransform>

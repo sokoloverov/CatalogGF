@@ -9,7 +9,12 @@
     </div>
     <div class="catalog">КАТАЛОГ<span class="flare"></span></div>
     <div class="pulse">
-      <img class="hand" alt="Vue logo" src="../assets/logo/1-01.png" />
+      <!-- <img class="hand" alt="Vue logo" src="../assets/logo/1-01.png" /> -->
+      <img
+        class="hand"
+        alt="Vue logo"
+        src="../assets/img/png-clipart-white-mouse-pointer-computer-mouse-pointer-cursor-window-pointing-device-mouse-cursor-miscellaneous-angle-removebg-preview.png"
+      />
     </div>
   </div>
 </template>
@@ -112,9 +117,12 @@ export default {
 }
 .hand {
   position: absolute;
-  left: -2.7rem;
-  top: 1.7rem;
-  height: 17rem;
+  //left: -2.7rem; рука
+  left: -0.75rem; //мышка
+  //top: 1.7rem; рука
+  top: 2.1rem; //мышка
+  height: 17rem; //рука
+  height: 13rem; //мышка
   z-index: 10;
   animation: handSkew 7s linear infinite;
 }
