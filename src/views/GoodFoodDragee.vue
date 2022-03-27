@@ -8,14 +8,14 @@
 <script>
 import ShowCase from "../components/ShowCase.vue";
 
-import GFDrageeBanana from "../assets/GOODFOOD/GFdragee/GF-драже-банан-шоколад.jpg";
-import GFDrageeCashew from "../assets/GOODFOOD/GFdragee/GF-драже-кешью-шоколад.jpg";
-import GFDrageeStrawberry from "../assets/GOODFOOD/GFdragee/GF-драже-клубника-в-белом.jpg";
-import GFDrageeAlmondW from "../assets/GOODFOOD/GFdragee/GF-драже-миндаль-в-белом.jpg";
-import GFDrageeHuzelnut from "../assets/GOODFOOD/GFdragee/GF-драже-фундук-шоколад.jpg";
-import GFDrageeCherry from "../assets/GOODFOOD/GFdragee/GF1_brown_драже-вишня.png";
-import GFDrageeAlmond from "../assets/GOODFOOD/GFdragee/GF1_brown_драже-миндаль.png";
-import GFDrageePinenut from "../assets/GOODFOOD/GFdragee/GF1_brown_кедр-в-шоколаде.png";
+import GFDrageeBanana from "../assets/GOODFOOD/GFdragee/GF-dragee-banana.jpg";
+import GFDrageeCashew from "../assets/GOODFOOD/GFdragee/GF-dragee-cashew.jpg";
+import GFDrageeStrawberry from "../assets/GOODFOOD/GFdragee/GF-dragee-strawberry.jpg";
+import GFDrageeAlmondW from "../assets/GOODFOOD/GFdragee/GF-dragee-almond-w.jpg";
+import GFDrageeHuzelnut from "../assets/GOODFOOD/GFdragee/GF-dragee-huzelnut.jpg";
+import GFDrageeCherry from "../assets/GOODFOOD/GFdragee/GF1_brown_dragee-cherry.png";
+import GFDrageeAlmond from "../assets/GOODFOOD/GFdragee/GF1_brown_dragee-almond.png";
+import GFDrageePinenut from "../assets/GOODFOOD/GFdragee/GF1_brown_dragee-pinenut.png";
 
 export default {
   name: "GoodFoodMix",

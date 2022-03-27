@@ -34,10 +34,10 @@ import SectionHeader from "../components/SectionHeader.vue";
 import RouterWindow from "../components/RouterWindow.vue";
 
 import logo from "../assets/logo/Vivallogo.jpg";
-import banner0 from "../assets/Baners/Виваль.jpg";
-import banner1 from "../assets/Baners/Виваль_кокос.jpg";
-import banner2 from "../assets/Baners/Виваль_десерт.jpg";
-import banner3 from "../assets/Baners/ФЖК.jpg";
+import banner0 from "../assets/Baners/Vival.jpg";
+import banner1 from "../assets/Baners/Vival-cocos.jpg";
+import banner2 from "../assets/Baners/Vival-dessert.jpg";
+import banner3 from "../assets/Baners/FJC.jpg";
 
 export default {
   name: "Vival",

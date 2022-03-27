@@ -8,10 +8,10 @@
 <script>
 import ShowCase from "../components/ShowCase.vue";
 
-import NBbarNutCashew from "../assets/NUTBERRY/NBnutbar/NB-орехово-фруктовый-кешью.jpg";
-import NBbarNutMacadamia from "../assets/NUTBERRY/NBnutbar/NB-орехово-фруктовый-макадамия.jpg";
-import NBbarNutPecan from "../assets/NUTBERRY/NBnutbar/NB-орехово-фруктовый-пекан.jpg";
-import NBbarNutHuzelnut from "../assets/NUTBERRY/NBnutbar/NB-орехово-фруктовый-фундук.jpg";
+import NBbarNutCashew from "../assets/NUTBERRY/NBnutbar/NB-nf-cashew.jpg";
+import NBbarNutMacadamia from "../assets/NUTBERRY/NBnutbar/NB-nf-makadamia.jpg";
+import NBbarNutPecan from "../assets/NUTBERRY/NBnutbar/NB-nf-pecan.jpg";
+import NBbarNutHuzelnut from "../assets/NUTBERRY/NBnutbar/NB-nf-huzelnut.jpg";
 
 export default {
   name: "NutberryNutBar",

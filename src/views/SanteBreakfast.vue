@@ -10,8 +10,8 @@ import ShowCase from "../components/ShowCase.vue";
 import SanteCrunchyClassic from "../assets/Sante/SanteBreakfast/Crunchy_klasyczne_350g.jpg";
 import SanteCrunchyOats from "../assets/Sante/SanteBreakfast/Crunchy_owocowe_350g.jpg";
 import SanteCrunchyBanana from "../assets/Sante/SanteBreakfast/Crunchy_bananowe_350g.jpg";
-import SanteGranolaGranat from "../assets/Sante/SanteBreakfast/Granola_с_гранатом_и_черникой.jpg";
-import SanteGranolaFruits from "../assets/Sante/SanteBreakfast/Granola_с_фруктами.jpg";
+import SanteGranolaGranat from "../assets/Sante/SanteBreakfast/Granola_granate_blueberry.jpg";
+import SanteGranolaFruits from "../assets/Sante/SanteBreakfast/Granola_fruits.jpg";
 import SanteGranolaChokolad from "../assets/Sante/SanteBreakfast/granola-chocolate-350g.jpg";
 import SanteGranolaPeanut from "../assets/Sante/SanteBreakfast/granola-nut-350g.jpg";
 

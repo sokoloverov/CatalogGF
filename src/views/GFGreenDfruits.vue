@@ -8,9 +8,9 @@
 <script>
 import ShowCase from "../components/ShowCase.vue";
 
-import GreenDFapricot from "../assets/GFGreen/GFGreenDF/GF_Green_конфеты_абрикос_в_шоколаде_front.jpg";
-import GreenDFbanana from "../assets/GFGreen/GFGreenDF/GF_Green_конфеты_банан_в_шоколаде_front.jpg";
-import GreenDFdate from "../assets/GFGreen/GFGreenDF/GF_Green_финик_в_шоколаде_front.jpg";
+import GreenDFapricot from "../assets/GFGreen/GFGreenDF/GF_Green_sweets_apricot_in_chokolate_front.jpg";
+import GreenDFbanana from "../assets/GFGreen/GFGreenDF/GF_Green_sweets_banana_in_chocolate_front.jpg";
+import GreenDFdate from "../assets/GFGreen/GFGreenDF/GF_Green_figs_in_chocolate_front.jpg";
 
 export default {
   name: "GFGreenDfruits",

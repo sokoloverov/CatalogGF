@@ -8,25 +8,25 @@
 <script>
 import ShowCase from "../components/ShowCase.vue";
 
-import GFpeanutRHS from "../assets/GOODFOOD/GFNuts/Арахис-жар.-с-медом-и-кунжутом.jpg";
-import GFpeanutRwS from "../assets/GOODFOOD/GFNuts/Арахис-жареный-соленый.jpg";
-import GFbraziliannut from "../assets/GOODFOOD/GFNuts/Бразильский-орех.jpg";
-import GFwalnut from "../assets/GOODFOOD/GFNuts/Грецкий-орех.jpg";
-import GFcashewRHS from "../assets/GOODFOOD/GFNuts/Кешью-жареный-с-медом-и-кунжутом.jpg";
-import GFcashewR from "../assets/GOODFOOD/GFNuts/Кешью-жареный.jpg";
-import GFalmondR from "../assets/GOODFOOD/GFNuts/Миндаль-жареный.jpg";
-import GFsunflower from "../assets/GOODFOOD/GFNuts/Семечки-подсолнечника-сушеные.jpg";
-import GFpumpkin from "../assets/GOODFOOD/GFNuts/Тыквенные-семечки-сушеные.jpg";
-import GFpistachiosR from "../assets/GOODFOOD/GFNuts/Фисташки-_жареные_.jpg";
-import GFhuzelnutRHS from "../assets/GOODFOOD/GFNuts/Фундук-жареный-с-медом-и-кунжутом.jpg";
-import GFhuzelnutR from "../assets/GOODFOOD/GFNuts/Фундук-жареный.jpg";
-import GFcashewD from "../assets/GOODFOOD/GFNuts/GF-кешью_суш_130.jpg";
-import GFalmondD from "../assets/GOODFOOD/GFNuts/GF-миндаль_суш_130.jpg";
-import GFpistachiosRS from "../assets/GOODFOOD/GFNuts/GF-фисташки_жс_130.jpg";
-import GFhuzelnutD from "../assets/GOODFOOD/GFNuts/GF-фундук_суш_130.jpg";
-import GFpeanut from "../assets/GOODFOOD/GFNuts/GF-DP-орехи-арахс-жар-без-соли.jpg";
-import GFpinenut from "../assets/GOODFOOD/GFNuts/GF-DP-орехи-кедровый.jpg";
-import GFmacadamia from "../assets/GOODFOOD/GFNuts/GF-DP-орехи-макадамия.jpg";
+import GFpeanutRHS from "../assets/GOODFOOD/GFNuts/GF-peanut-honey-sesame.jpg";
+import GFpeanutRwS from "../assets/GOODFOOD/GFNuts/GF-peanut-rs.jpg";
+import GFbraziliannut from "../assets/GOODFOOD/GFNuts/GF-brazilnut.jpg";
+import GFwalnut from "../assets/GOODFOOD/GFNuts/GF-walnut.jpg";
+import GFcashewRHS from "../assets/GOODFOOD/GFNuts/GF-cashew-honey-seasam.jpg";
+import GFcashewR from "../assets/GOODFOOD/GFNuts/GF-cashewr.jpg";
+import GFalmondR from "../assets/GOODFOOD/GFNuts/GF-almondr.jpg";
+import GFsunflower from "../assets/GOODFOOD/GFNuts/GF-sunflower.jpg";
+import GFpumpkin from "../assets/GOODFOOD/GFNuts/GF-pumpkin.jpg";
+import GFpistachiosR from "../assets/GOODFOOD/GFNuts/GF-phistahosr.jpg";
+import GFhuzelnutRHS from "../assets/GOODFOOD/GFNuts/GF-huzelnut-honey-seasam.jpg";
+import GFhuzelnutR from "../assets/GOODFOOD/GFNuts/GF-huzelnutr.jpg";
+import GFcashewD from "../assets/GOODFOOD/GFNuts/GF-cashewd-130.jpg";
+import GFalmondD from "../assets/GOODFOOD/GFNuts/GF-almondd_130.jpg";
+import GFpistachiosRS from "../assets/GOODFOOD/GFNuts/GF-phistahosrs_130.jpg";
+import GFhuzelnutD from "../assets/GOODFOOD/GFNuts/GF-huzelnutd_130.jpg";
+import GFpeanut from "../assets/GOODFOOD/GFNuts/GF-peanutr-nosalt.jpg";
+import GFpinenut from "../assets/GOODFOOD/GFNuts/GF-pinenut.jpg";
+import GFmacadamia from "../assets/GOODFOOD/GFNuts/GF-makadamia.jpg";
 
 export default {
   name: "GoodFoodNuts",

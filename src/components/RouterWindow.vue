@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- <fall-animation /> -->
     <div class="router__window">
       <div>
         <img class="router__window_img" alt="Vue logo" :src="logo" />
@@ -58,27 +57,52 @@ export default {
 </script>
 
 <style lang="scss">
-//@import "../css/style.scss";
+$superMinScreen: 420px;
+$minScreen: 920px;
+$largeScreen: 1081px;
 /*МЕНЮ РОУТЕРОВ*/
 .router__window {
   position: fixed;
-  top: 20%;
+  top: 20vh;
   left: 2vw;
   width: 20vw;
   background-color: rgb(255, 255, 255);
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   display: inline-block;
+  @media (max-width: $largeScreen) {
+    position: static;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin: 1rem auto;
+  }
+  @media (max-width: $largeScreen) and (orientation: landscape) {
+    width: 85vw;
+  }
 }
 .router__window_link {
   margin: 2rem 1rem;
   font-size: 0.8rem;
   text-transform: uppercase;
+  @media (max-width: $largeScreen) {
+    display: flex;
+    margin: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
 }
 .router__window_img {
   width: 10vw;
   margin-top: 15%;
+  @media (max-width: $largeScreen) {
+    display: none;
+  }
 }
 .router__window_textCategory {
+  @media (max-width: $largeScreen) {
+    display: none;
+  }
   width: 80%;
   margin: 1rem auto;
   color: #003897;
@@ -97,13 +121,15 @@ export default {
   text-decoration-line: none;
   color: #ed302f;
   font-weight: 700;
-  padding: 1rem 0;
   cursor: pointer;
-  width: 17vw;
-  height: 0.9rem;
-  border: 3px solid #ed302f;
-  border-radius: 5px;
-  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+  @media (min-width: $largeScreen) {
+    padding: 1rem 0;
+    width: 17vw;
+    height: 0.9rem;
+    border: 3px solid #ed302f;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+  }
 }
 
 /*ПЕРЕЛИВАЮЩЙСЯ ТЕКСТ*/
@@ -129,13 +155,7 @@ export default {
       #bfe2ff 1em,
       #337ab7 50%
     ),
-    repeating-linear-gradient(
-      45deg,
-      #337ab7,
-      #337ab7 1em,
-      #fff 1em,
-      #bfe2ff 50%
-    );
+    repeating-linear-gradient(45deg, #337ab7, #337ab7 1em, #fff 1em, #bfe2ff 50%);
   background-size: 3em 3em, 2em 2em;
   animation-name: ani;
   animation-duration: 5s;

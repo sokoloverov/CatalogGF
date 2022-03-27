@@ -7,11 +7,11 @@
 <script>
 import ShowCase from "../components/ShowCase.vue";
 
-import VivalJellyApricot from "../assets/Vival/Vjelly/ФЖК_Абрикос175.jpg";
-import VivalJellyApricotCr from "../assets/Vival/Vjelly/ФЖК-Абрикос-клюква175.jpg";
-import VivalJellyAppleSt from "../assets/Vival/Vjelly/ФЖК-Клубника-яблоко175.jpg";
-import VivalJellyPruneCh from "../assets/Vival/Vjelly/ФЖК-чернослив-черешня175.jpg";
-import VivalJellyPrune from "../assets/Vival/Vjelly/ФЖК-Чернослив175.jpg";
+import VivalJellyApricot from "../assets/Vival/Vjelly/FJC-apricot-175.jpg";
+import VivalJellyApricotCr from "../assets/Vival/Vjelly/FJC-apricot-cranberry-175.jpg";
+import VivalJellyAppleSt from "../assets/Vival/Vjelly/FJC-straberry-apple-175.jpg";
+import VivalJellyPruneCh from "../assets/Vival/Vjelly/FJC-prune-cherriess-175.jpg";
+import VivalJellyPrune from "../assets/Vival/Vjelly/FJC-prune-175.jpg";
 
 export default {
   name: "VivalJelly",

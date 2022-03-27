@@ -7,9 +7,9 @@
 <script>
 import ShowCase from "../components/ShowCase.vue";
 
-import VivalDessertBanana from "../assets/Vival/Vdessert/десертные-конфеты-банан.jpg";
-import VivalDessertDate from "../assets/Vival/Vdessert/десертные-конфеты-финик.jpg";
-import VivalDessertFig from "../assets/Vival/Vdessert/десертные-конфеты-инжир.jpg";
+import VivalDessertBanana from "../assets/Vival/Vdessert/Vival-dessert-banana.jpg";
+import VivalDessertDate from "../assets/Vival/Vdessert/Vival-dessert-date.jpg";
+import VivalDessertFig from "../assets/Vival/Vdessert/Vival-dessert-fig.jpg";
 
 export default {
   name: "VivalDesserts",

@@ -7,10 +7,10 @@
 <script>
 import ShowCase from "../components/ShowCase.vue";
 
-import VivalDrageeAlmond from "../assets/Vival/Vdragee/Драже_Миндаль_в_белой_шг_140г.jpg";
-import VivalDrageePhista from "../assets/Vival/Vdragee/Драже_Фисташка_трюфель_120г.jpg";
-import VivalDrageeHuzelW from "../assets/Vival/Vdragee/Драже_Фундук_в_белой_шок_глазури.jpg";
-import VivalDrageeHuzelMB from "../assets/Vival/Vdragee/Драже_фундук_в_мол_шок_глазури_140г.jpg";
+import VivalDrageeAlmond from "../assets/Vival/Vdragee/Vival-dregee-almond-white_140г.jpg";
+import VivalDrageePhista from "../assets/Vival/Vdragee/Vival-dragee-phistahos-trufel_120г.jpg";
+import VivalDrageeHuzelW from "../assets/Vival/Vdragee/Vival-dragee-huzelnut-white.jpg";
+import VivalDrageeHuzelMB from "../assets/Vival/Vdragee/Vival-dragee-huzelnut-white.jpg";
 
 export default {
   name: "VivalDragee",

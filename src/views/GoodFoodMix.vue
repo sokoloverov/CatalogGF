@@ -8,11 +8,11 @@
 <script>
 import ShowCase from "../components/ShowCase.vue";
 
-import GFMixNutsAndRaisin from "../assets/GOODFOOD/GFmix/Смесь-Орехов-и-Изюма.jpg";
-import GFMixNuts from "../assets/GOODFOOD/GFmix/Смесь-Ореховая.jpg";
-import GFMixSweet from "../assets/GOODFOOD/GFmix/Смесь-Сладкая.jpg";
-import GFMixTropicana from "../assets/GOODFOOD/GFmix/Смесь-Тропикана.jpg";
-//import GFMixWine from "../assets/GOODFOOD/GFmix/Смесь-Подарочная.jpg";
+import GFMixNutsAndRaisin from "../assets/GOODFOOD/GFmix/mix-nutsandraisin.jpg";
+import GFMixNuts from "../assets/GOODFOOD/GFmix/mix-nuts.jpg";
+import GFMixSweet from "../assets/GOODFOOD/GFmix/mix-sweet.jpg";
+import GFMixTropicana from "../assets/GOODFOOD/GFmix/mix-tropicana.jpg";
+//import GFMixWine from "../assets/GOODFOOD/GFmix/mix-present.jpg";
 
 export default {
   name: "GoodFoodMix",

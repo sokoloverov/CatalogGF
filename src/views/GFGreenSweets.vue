@@ -8,15 +8,15 @@
 <script>
 import ShowCase from "../components/ShowCase.vue";
 
-import GreenSweetFig from "../assets/GFGreen/GFGreenSweets/GF_Green_конфеты_инжир_в_шоколаде_front.jpg";
-import GreenSweetCoconut from "../assets/GFGreen/GFGreenSweets/GF_Green_конфеты_кокосовые_в_шоколаде_front.jpg";
-import GreenSweetCoconutCocoa from "../assets/GFGreen/GFGreenSweets/GF_Green_конфеты_кокосовые_c_какао_в_шоколаде_front.jpg";
-import GreenSweetMarzipan from "../assets/GFGreen/GFGreenSweets/GF_Green_конфеты_марципановые_в_шоколаде_front.jpg";
-import GreenSweetCashew from "../assets/GFGreen/GFGreenSweets/GF_Green_конфеты_фруктово-ореховые_с_кешью_front.jpg";
-import GreenSweetMacadamia from "../assets/GFGreen/GFGreenSweets/GF_Green_конфеты_фруктово-ореховые_с_макадамией_front.jpg";
-import GreenSweetPecan from "../assets/GFGreen/GFGreenSweets/GF_Green_конфеты_фруктово-ореховые_с_пеканом_front.jpg";
-import GreenSweetHazelnut from "../assets/GFGreen/GFGreenSweets/GF_Green_конфеты_фруктово-ореховые_с_фундуком_front.jpg";
-import GreenSweetDate from "../assets/GFGreen/GFGreenSweets/GF_Green_конфеты_финиковые_в_шоколаде_front.jpg";
+import GreenSweetFig from "../assets/GFGreen/GFGreenSweets/GF_Green_sweets_figs_in_chocolate_front.jpg";
+import GreenSweetCoconut from "../assets/GFGreen/GFGreenSweets/GF_Green_sweets_coconut_in_chocolade_front.jpg";
+import GreenSweetCoconutCocoa from "../assets/GFGreen/GFGreenSweets/GF_Green_sweets_coconutcoca_in_chocolate_front.jpg";
+import GreenSweetMarzipan from "../assets/GFGreen/GFGreenSweets/GF_Green_sweets_marzipan_in_chocolade_front.jpg";
+import GreenSweetCashew from "../assets/GFGreen/GFGreenSweets/GF_Green_sweets_fn_with_cashew_front.jpg";
+import GreenSweetMacadamia from "../assets/GFGreen/GFGreenSweets/GF_Green_sweets_fn_with_macadamia_front.jpg";
+import GreenSweetPecan from "../assets/GFGreen/GFGreenSweets/GF_Green_sweets_fn_with_pecan_front.jpg";
+import GreenSweetHazelnut from "../assets/GFGreen/GFGreenSweets/GF_Green_sweets_fn_with_huzelnut_front.jpg";
+import GreenSweetDate from "../assets/GFGreen/GFGreenSweets/GF_Green_sweets_date_in_chocolate_front.jpg";
 
 export default {
   name: "GFGreenSweets",

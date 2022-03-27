@@ -8,15 +8,15 @@
 <script>
 import ShowCase from "../components/ShowCase.vue";
 
-import NBMixNutsFruits50 from "../assets/NUTBERRY/NBmix/NBОрехи-и-ягоды50.jpg";
-import NBMixCashewCrunberry100 from "../assets/NUTBERRY/NBmix/NBСмесь-кешью-и-клюква-100.jpg";
-import NBMixNutsFruits100 from "../assets/NUTBERRY/NBmix/NBСмесь-орехи-и-фрукты-100.jpg";
-import NBMixNutsPineapple220 from "../assets/NUTBERRY/NBmix/NBСмесь-жареные-орехи-с-ананасом-и-изюмом-220.jpg";
-import NBMixNutsBerry100 from "../assets/NUTBERRY/NBmix/NBСмесь-орехи-фрукты-ягоды-100.jpg";
-import NBMixNutsBerry220 from "../assets/NUTBERRY/NBmix/NBСмесь-орехи-фрукты-ягоды-220.jpg";
-import NBMixAppleCinnamon from "../assets/NUTBERRY/NBmix/NB-яблоко-корица-220.jpg";
+import NBMixNutsFruits50 from "../assets/NUTBERRY/NBmix/NB-nutsberry-50.jpg";
+import NBMixCashewCrunberry100 from "../assets/NUTBERRY/NBmix/NB-cashwe-crunberry-100.jpg";
+import NBMixNutsFruits100 from "../assets/NUTBERRY/NBmix/NB-nuts-fruits-100.jpg";
+import NBMixNutsPineapple220 from "../assets/NUTBERRY/NBmix/NB-nuts-ananas-raisin-220.jpg";
+import NBMixNutsBerry100 from "../assets/NUTBERRY/NBmix/NB-nuts-fruits-berry-100.jpg";
+import NBMixAppleCinnamon from "../assets/NUTBERRY/NBmix/NB-applecinamon-220.jpg";
 //мультикартинки
-import NBMixNutsFruitsMulti from "../assets/NUTBERRY/NBmix/NBсмесь-орехи-и-фрукты.jpg";
+import NBMixNutsFruitsMulti from "../assets/NUTBERRY/NBmix/NB-nuts-fruits-multi.jpg";
+import NBMixNutsFruitsBerryMulti from "../assets/NUTBERRY/NBmix/NB-nuts-fruits-berry-multi.jpg";
 
 export default {
   name: "NutberryMix",
@@ -58,15 +58,9 @@ export default {
         },
         {
           picture: NBMixNutsBerry100,
-          text: "NUTBERRY Смесь орехи фрукты ягоды 100 г",
+          pictureMulti: NBMixNutsFruitsBerryMulti,
+          text: "NUTBERRY Смесь орехи фрукты ягоды 100, 220 г",
           id: 8,
-          description:
-            "Состав: ананас сушеный (ананас, сахар, регулятор кислотности лимонная кислота, консервант Е220, красители Е124, Е122, Е133, Е102, Е110),  изюм (виноград сушеный без косточек, подсолнечное масло, консервант Е 220), сушеные ядра миндаля и кешью, клюква сушеная (клюква, сахар, подсолнечное масло, регулятор кислотности  лимонная кислота) в изменяемых соотношениях.<br>Содержит красители, которые могут оказывать отрицательное влияние на активность и внимание детей.<br>Продукт может содержать фрагменты скорлупы, следы арахиса, кунжута, других орехов.<br>Пищевая ценность в 100 г: Белки 5,9 г, Жиры 13,1 г, Углеводы 58,5<br>Энергетическая ценность 380,8 Ккал.<br>Хранить при температуре от +5°С до +25°С и относительной влажности воздуха не более 75%. Срок годности 12 месяцев.<br>ТУ 9164-002-60458573-15<br>Страна изготовитель: Россия",
-        },
-        {
-          picture: NBMixNutsBerry220,
-          text: "NUTBERRY Смесь орехи фрукты ягоды 220 г",
-          id: 9,
           description:
             "Состав: ананас сушеный (ананас, сахар, регулятор кислотности лимонная кислота, консервант Е220, красители Е124, Е122, Е133, Е102, Е110),  изюм (виноград сушеный без косточек, подсолнечное масло, консервант Е 220), сушеные ядра миндаля и кешью, клюква сушеная (клюква, сахар, подсолнечное масло, регулятор кислотности  лимонная кислота) в изменяемых соотношениях.<br>Содержит красители, которые могут оказывать отрицательное влияние на активность и внимание детей.<br>Продукт может содержать фрагменты скорлупы, следы арахиса, кунжута, других орехов.<br>Пищевая ценность в 100 г: Белки 5,9 г, Жиры 13,1 г, Углеводы 58,5<br>Энергетическая ценность 380,8 Ккал.<br>Хранить при температуре от +5°С до +25°С и относительной влажности воздуха не более 75%. Срок годности 12 месяцев.<br>ТУ 9164-002-60458573-15<br>Страна изготовитель: Россия",
         },

@@ -8,8 +8,8 @@
 <script>
 import ShowCase from "../components/ShowCase.vue";
 
-import NBpastaMilk from "../assets/NUTBERRY/NBpasta/NB-Паста-шоколадная-с-какао-и-молоком-350.jpg";
-import NBpastaChoco from "../assets/NUTBERRY/NBpasta/NB-Паста-ореховая-с-доб-какао-350-г.jpg";
+import NBpastaMilk from "../assets/NUTBERRY/NBpasta/NB-pasta-milk-350.jpg";
+import NBpastaChoco from "../assets/NUTBERRY/NBpasta/NB-pasta-350.jpg";
 
 export default {
   name: "NutberryPasta",

@@ -2,15 +2,8 @@
   <div class="goods__window goods__window_ramka">
     <a class="goods__window goods__box_a" @click="changeShowProductCard">
       <div class="goods__window_position">
-        <div
-          class="goods__window_left"
-          :class="chooseQuantity() > 1 ? width60 : width40"
-        >
-          <img
-            class="goods__window_img"
-            alt="Vue logo"
-            :src="choosePicture()"
-          />
+        <div class="goods__window_left" :class="chooseQuantity() > 1 ? width60 : width40">
+          <img class="goods__window_img" alt="Vue logo" :src="choosePicture()" />
         </div>
         <div
           class="goods__window_right"
@@ -19,10 +12,7 @@
           <div class="goods__window_name">
             <span v-html="productCard.text"></span>
           </div>
-          <div
-            class="goods__window_description"
-            v-html="productCard.description"
-          ></div>
+          <div class="goods__window_description" v-html="productCard.description"></div>
         </div>
       </div>
     </a>
@@ -61,6 +51,9 @@ export default {
 </script>
 
 <style lang="scss">
+$superMinScreen: 420px;
+$minScreen: 920px;
+$largeScreen: 1081px;
 /*МОДАЛЬНОЕ ОКНО*/
 .goods__window {
   position: fixed;
@@ -69,6 +62,27 @@ export default {
   width: 60%;
   height: 65%;
   display: flex;
+  @media (max-width: $largeScreen) {
+    top: 37vh;
+    left: 10vw;
+    width: 80vw;
+    height: 60vh;
+  }
+  @media (max-width: $largeScreen) and (orientation: portrait) {
+    top: 25vh;
+  }
+  @media (max-width: $superMinScreen) {
+    top: 5vh;
+    left: 10vw;
+    width: 80vw;
+    height: 90vh;
+  }
+  @media (max-width: $minScreen) and (orientation: landscape) {
+    top: 5vh;
+    left: 10vw;
+    width: 80vw;
+    height: 90vh;
+  }
 }
 .goods__window_position {
   display: flex;
@@ -80,11 +94,14 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: $minScreen) {
+    display: none;
+  }
 }
 .goods__window_img {
   display: flex;
   max-width: 80%;
-  max-height: 100%;
+  //max-height: 100%;
   object-fit: cover;
   justify-content: space-around;
 }
@@ -96,6 +113,9 @@ export default {
 }
 .goods__window_width60 {
   width: 60%;
+  @media (max-width: $minScreen) {
+    width: 100%;
+  }
 }
 .goods__window_width40 {
   width: 40%;
@@ -106,6 +126,10 @@ export default {
   padding: 1rem 0 0 0;
   text-align: left;
   font-weight: 600;
+  @media (max-width: $minScreen) {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
 }
 
 .goods__window_description {
@@ -113,6 +137,14 @@ export default {
   line-height: 1.2rem;
   padding: 1rem 0;
   text-align: left;
+  @media (max-width: $superMinScreen) {
+    font-size: 0.65rem;
+    line-height: 1rem;
+  }
+  @media (max-width: $minScreen) and (orientation: landscape) {
+    font-size: 0.65rem;
+    line-height: 1rem;
+  }
 }
 /*РАМКА*/
 .goods__window_ramka {
@@ -135,8 +167,8 @@ export default {
   background-position: 0 0, 100% 0, 100% 100%, 0 100%;
   // background-image: linear-gradient(#ffffff, #ffffff),
   //   linear-gradient(#333dd6, #333dd6), linear-gradient(#ffffff, #ffffff)
-  background-image: linear-gradient(#ffffff, #2b559c),
-    linear-gradient(#ffffff, #ffffff), linear-gradient(#ffffff, #ed302f);
+  background-image: linear-gradient(#ffffff, #2b559c), linear-gradient(#ffffff, #ffffff),
+    linear-gradient(#ffffff, #ed302f);
 
   animation: anim-ramka 45s linear infinite;
 }

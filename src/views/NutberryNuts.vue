@@ -8,24 +8,24 @@
 <script>
 import ShowCase from "../components/ShowCase.vue";
 
-import NBpeanutRS100 from "../assets/NUTBERRY/NBnuts/NBАрахис-ж.с-100.jpg";
-import NBwalnut100 from "../assets/NUTBERRY/NBnuts/NBГрецкий-орех-100.jpg";
-import NBpinenut100 from "../assets/NUTBERRY/NBnuts/NBКедровый-орех-100.jpg";
-import NBcashewR100 from "../assets/NUTBERRY/NBnuts/NBКешью-жареный-100.jpg";
-import NBcashew100 from "../assets/NUTBERRY/NBnuts/NBКешью-сушеный-100.jpg";
-import NBalmondR100 from "../assets/NUTBERRY/NBnuts/NBМиндаль-жареный-100.jpg";
-import NBalmond100 from "../assets/NUTBERRY/NBnuts/NBМиндаль-сушеный-100.jpg";
-import NBpistachiosR100 from "../assets/NUTBERRY/NBnuts/NBФисташка-ж.с-100.jpg";
-import NBhuzelnutR100 from "../assets/NUTBERRY/NBnuts/NBФундук-жареный-100.jpg";
-import NBhuzelnut100 from "../assets/NUTBERRY/NBnuts/NBФундук-сушеный-100.jpg";
+import NBpeanutRS100 from "../assets/NUTBERRY/NBnuts/NB-almondrs-100.jpg";
+import NBwalnut100 from "../assets/NUTBERRY/NBnuts/NB-walnut-100.jpg";
+import NBpinenut100 from "../assets/NUTBERRY/NBnuts/NB-pinenut-100.jpg";
+import NBcashewR100 from "../assets/NUTBERRY/NBnuts/NB-cashwer-100.jpg";
+import NBcashew100 from "../assets/NUTBERRY/NBnuts/NB-cashewd-100.jpg";
+import NBalmondR100 from "../assets/NUTBERRY/NBnuts/NB-almondr-100.jpg";
+import NBalmond100 from "../assets/NUTBERRY/NBnuts/NB-almondd-100.jpg";
+import NBpistachiosR100 from "../assets/NUTBERRY/NBnuts/NB-phistahosrs-100.jpg";
+import NBhuzelnutR100 from "../assets/NUTBERRY/NBnuts/NB-hzelnatr-100.jpg";
+import NBhuzelnut100 from "../assets/NUTBERRY/NBnuts/NB-huzelnutd-100.jpg";
 //мультикартинки
-import NBpeanutMulti from "../assets/NUTBERRY/NBnuts/NBАрахис-multi.jpg";
-import NBwalnutMulti from "../assets/NUTBERRY/NBnuts/NBГрецкий-multi.jpg";
-import NBpinenutMulti from "../assets/NUTBERRY/NBnuts/NBКедровый-multi.jpg";
-import NBcashewMulti from "../assets/NUTBERRY/NBnuts/NBКешью-жареный-multi.jpg";
-import NBalmondMulti from "../assets/NUTBERRY/NBnuts/NBМиндаль-multi.jpg";
-import NBpistachiosMulti from "../assets/NUTBERRY/NBnuts/NBФисташка-multi.jpg";
-import NBhuzelnutMulti from "../assets/NUTBERRY/NBnuts/NBФундук-multi.jpg";
+import NBpeanutMulti from "../assets/NUTBERRY/NBnuts/NB-peanutrs-multi.jpg";
+import NBwalnutMulti from "../assets/NUTBERRY/NBnuts/NB-walnut-multi.jpg";
+import NBpinenutMulti from "../assets/NUTBERRY/NBnuts/NB-pinenut-multi.jpg";
+import NBcashewMulti from "../assets/NUTBERRY/NBnuts/NB-cashewr-multi.jpg";
+import NBalmondMulti from "../assets/NUTBERRY/NBnuts/NB-almond-multi.jpg";
+import NBpistachiosMulti from "../assets/NUTBERRY/NBnuts/NB-phistahos-multi.jpg";
+import NBhuzelnutMulti from "../assets/NUTBERRY/NBnuts/NB-huzelnut-multi.jpg";
 
 export default {
   name: "NutberryNuts",

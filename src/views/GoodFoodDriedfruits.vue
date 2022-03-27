@@ -8,21 +8,21 @@
 <script>
 import ShowCase from "../components/ShowCase.vue";
 
-import GFapricot from "../assets/GOODFOOD/GFdf/абрикос-суш.jpg";
-import GFapricotBio from "../assets/GOODFOOD/GFdf/Абрикос-сушеный-натуральный.jpg";
-import GFgingerS from "../assets/GOODFOOD/GFdf/Имбирь-в-сахаре.jpg";
-import GFfig from "../assets/GOODFOOD/GFdf/Инжир-сушеный.jpg";
-import GFapple from "../assets/GOODFOOD/GFdf/Яблоки-сушеные-кольца.jpg";
-import GFgoji from "../assets/GOODFOOD/GFdf/Ягоды-годжи.jpg";
-import GFprunes from "../assets/GOODFOOD/GFdf/GF-чернослив_бк_200.jpg";
-import GFcherry from "../assets/GOODFOOD/GFdf/GF-DP-сухофрукты-вишня.jpg";
-import GFmelon from "../assets/GOODFOOD/GFdf/GF-DP-сухофрукты-дыня.jpg";
-import GFraisin from "../assets/GOODFOOD/GFdf/GF-DP-сухофрукты-изюм.jpg";
-import GFcranberry from "../assets/GOODFOOD/GFdf/GF-DP-сухофрукты-клюква.jpg";
-import GFmango from "../assets/GOODFOOD/GFdf/GF-DP-сухофрукты-манго.jpg";
-import GFpapaya from "../assets/GOODFOOD/GFdf/GF-DP-сухофрукты-папайя.jpg";
-import GFdates from "../assets/GOODFOOD/GFdf/GF-DP-сухофрукты-финик-без-косточки.jpg";
-import GFdateswS from "../assets/GOODFOOD/GFdf/GF-DP-сухофрукты-финик-косточка.jpg";
+import GFapricot from "../assets/GOODFOOD/GFdf/apricotdry.jpg";
+import GFapricotBio from "../assets/GOODFOOD/GFdf/apricotdrybio.jpg";
+import GFgingerS from "../assets/GOODFOOD/GFdf/ginger.jpg";
+import GFfig from "../assets/GOODFOOD/GFdf/figdry.jpg";
+import GFapple from "../assets/GOODFOOD/GFdf/apple.jpg";
+import GFgoji from "../assets/GOODFOOD/GFdf/godji.jpg";
+import GFprunes from "../assets/GOODFOOD/GFdf/GF-prunewithout_200.jpg";
+import GFcherry from "../assets/GOODFOOD/GFdf/GF-DP-cherry.jpg";
+import GFmelon from "../assets/GOODFOOD/GFdf/GF-DP-melon.jpg";
+import GFraisin from "../assets/GOODFOOD/GFdf/GF-DP-raisin.jpg";
+import GFcranberry from "../assets/GOODFOOD/GFdf/GF-DP-crunberry.jpg";
+import GFmango from "../assets/GOODFOOD/GFdf/GF-DP-mango.jpg";
+import GFpapaya from "../assets/GOODFOOD/GFdf/GF-DP-papaya.jpg";
+import GFdates from "../assets/GOODFOOD/GFdf/GF-DP-datewithout.jpg";
+import GFdateswS from "../assets/GOODFOOD/GFdf/GF-DP-datewith.jpg";
 
 export default {
   name: "GoodFoodDriedfruits",

@@ -8,11 +8,11 @@
 <script>
 import ShowCase from "../components/ShowCase.vue";
 
-import GreenDpeanut from "../assets/GFGreen/GFGreenDragee/GF_Green_арахис_в_шоколаде_front.jpg";
-import GreenDpinenut from "../assets/GFGreen/GFGreenDragee/GF_Green_кедровый_орех_в_шоколаде_front.jpg";
-import GreenDcashew from "../assets/GFGreen/GFGreenDragee/GF_Green_кешью_в_шоколаде_front.jpg";
-import GreenDalmond from "../assets/GFGreen/GFGreenDragee/GF_Green_миндаль_в_шоколаде_front.jpg";
-import GreenDhazelnut from "../assets/GFGreen/GFGreenDragee/GF_Green_фундук_в_шоколаде_front.jpg";
+import GreenDpeanut from "../assets/GFGreen/GFGreenDragee/GF_Green_peanut_in_chocolate_front.jpg";
+import GreenDpinenut from "../assets/GFGreen/GFGreenDragee/GF_Green_pinenut_in_chocolate_front.jpg";
+import GreenDcashew from "../assets/GFGreen/GFGreenDragee/GF_Green_cashew_in_chocolate_front.jpg";
+import GreenDalmond from "../assets/GFGreen/GFGreenDragee/GF_Green_almond_in_chocolate_front.jpg";
+import GreenDhazelnut from "../assets/GFGreen/GFGreenDragee/GF_Green_huzelnut_in_chocolate_front.jpg";
 
 export default {
   name: "GFGreenDragee",

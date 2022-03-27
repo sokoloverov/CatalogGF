@@ -4,13 +4,18 @@
     <transition name="fade" mode="out-in" appear>
       <div v-if="check" key="main">
         <div id="nav">
-          <!-- <router-link to="/">Навигация</router-link> | -->
-          <router-link to="/about">О компании</router-link> |
-          <router-link to="/gfgreen">GF Green</router-link> |
-          <router-link to="/goodfood">GOOD FOOD</router-link> |
-          <router-link to="/nutberry">NUTBERRY</router-link> |
-          <router-link to="/vival">Виваль</router-link> |
-          <router-link to="/sante">Sante</router-link>
+          <div>
+            <router-link to="/about">О компании</router-link>
+            <router-link to="/gfgreen">GF Green</router-link>
+          </div>
+          <div>
+            <router-link to="/goodfood">GOOD FOOD</router-link>
+            <router-link to="/nutberry">NUTBERRY</router-link>
+          </div>
+          <div>
+            <router-link to="/vival">Виваль</router-link>
+            <router-link to="/sante">Sante</router-link>
+          </div>
         </div>
         <router-view />
       </div>
@@ -34,16 +39,20 @@ export default {
       check: false,
     };
   },
+  mounted() {
+    //setTimeout(this.clickCheck, 4000);
+  },
   methods: {
     clickCheck() {
       this.check = true;
 
+      //обнуление счетчиков с последнего клика
       let highestTimeoutId = setTimeout(";");
       for (let i = 0; i < highestTimeoutId; i++) {
         clearTimeout(i);
       }
-
-      setTimeout(this.go, 180000);
+      //интервал до включения скринсейвера
+      //setTimeout(this.go, 180000);
     },
     go() {
       //включение скринсевера!
@@ -54,16 +63,30 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./css/style.css";
+$superMinScreen: 420px;
+$minScreen: 920px;
+$largeScreen: 1081px;
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
 #nav {
-  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 20px;
   a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0.15rem 0.3rem;
+    @media (min-width: $largeScreen) {
+      font-size: 1.4rem;
+    }
     font-size: 1.2rem;
     font-weight: bold;
     color: #175ba0;
@@ -78,7 +101,7 @@ export default {
 }
 .fade-enter-active,
 .fade-leave-active {
-  transition: all 1.5s;
+  transition: all 1.1s;
 }
 .fade-enter,
 .fade-leave-to {

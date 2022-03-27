@@ -24,6 +24,9 @@ export default {
 </script>
 
 <style lang="scss">
+$superMinScreen: 420px;
+$minScreen: 920px;
+$largeScreen: 1081px;
 /*ЗАГОЛОВОК РАЗДЕЛА*/
 .tmHeader {
   display: flex;
@@ -31,13 +34,19 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media (max-width: $largeScreen) {
+    margin-left: 0;
+  }
 }
 .tmHeader__header {
   display: flex;
   flex-direction: row;
 }
 .tmHeader__header_banner {
-  max-width: 90%;
+  width: 90%;
+  @media (max-width: $largeScreen) {
+    width: 100%;
+  }
 }
 .tmHeader__header_img {
   height: 4rem;
@@ -59,5 +68,8 @@ export default {
   line-height: 1rem;
   padding: 1rem 3rem 0.5rem;
   text-align: justify;
+  @media (max-width: $largeScreen) {
+    display: none;
+  }
 }
 </style>

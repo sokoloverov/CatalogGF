@@ -8,10 +8,10 @@
 <script>
 import ShowCase from "../components/ShowCase.vue";
 
-import NBcornPeanat from "../assets/NUTBERRY/NBcorn/NB-Попкорн-Карамель-с-арахисом.jpg";
-import NBcornAlmond from "../assets/NUTBERRY/NBcorn/NB-Попкорн-Карамель-с-миндалем.jpg";
-import NBcornCaramelSalt from "../assets/NUTBERRY/NBcorn/NB-Попкорн-Карамель-с-солью.jpg";
-import NBcornCaramel from "../assets/NUTBERRY/NBcorn/NB-Попкорн-Карамель.jpg";
+import NBcornPeanat from "../assets/NUTBERRY/NBcorn/NB-corn-peanut.jpg";
+import NBcornAlmond from "../assets/NUTBERRY/NBcorn/NB-corn-almond.jpg";
+import NBcornCaramelSalt from "../assets/NUTBERRY/NBcorn/NB-corn-salt.jpg";
+import NBcornCaramel from "../assets/NUTBERRY/NBcorn/NB-corn.jpg";
 
 export default {
   name: "NutberryCorn",

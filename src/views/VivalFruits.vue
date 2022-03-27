@@ -7,14 +7,14 @@
 <script>
 import ShowCase from "../components/ShowCase.vue";
 
-import VivalFruitsApricotAl from "../assets/Vival/Vfruitsweets/Абрикос_с_миндалемШГ180.jpg";
-import VivalFruitsOrange from "../assets/Vival/Vfruitsweets/АпельсинШГ180.jpg";
-import VivalFruitsRange from "../assets/Vival/Vfruitsweets/Ассорти180.jpg";
-import VivalFruitsPear from "../assets/Vival/Vfruitsweets/ГрушаШГ180.jpg";
-import VivalFruitsStrawberry from "../assets/Vival/Vfruitsweets/КлубникаБШГ180.jpg";
-import VivalFruitsMango from "../assets/Vival/Vfruitsweets/МангоШГ180.jpg";
-import VivalFruitsPrune from "../assets/Vival/Vfruitsweets/СливаШГ180.jpg";
-import VivalFruitsPruneW from "../assets/Vival/Vfruitsweets/Слива_с_грецким_орехом_180г.jpg";
+import VivalFruitsApricotAl from "../assets/Vival/Vfruitsweets/Vival-apricot-almond-chok-180.jpg";
+import VivalFruitsOrange from "../assets/Vival/Vfruitsweets/Vival-orange-chok-180.jpg";
+import VivalFruitsRange from "../assets/Vival/Vfruitsweets/Vival-assorti-180.jpg";
+import VivalFruitsPear from "../assets/Vival/Vfruitsweets/Vival-pear-180.jpg";
+import VivalFruitsStrawberry from "../assets/Vival/Vfruitsweets/Vival-straberry-white-180.jpg";
+import VivalFruitsMango from "../assets/Vival/Vfruitsweets/Vival-mango-180.jpg";
+import VivalFruitsPrune from "../assets/Vival/Vfruitsweets/Vival-prune-180.jpg";
+import VivalFruitsPruneW from "../assets/Vival/Vfruitsweets/Vival-plum-walnut-180.jpg";
 
 export default {
   name: "VivalFruits",

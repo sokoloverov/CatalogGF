@@ -8,12 +8,12 @@
 <script>
 import ShowCase from "../components/ShowCase.vue";
 
-import NBapricot from "../assets/NUTBERRY/NBdf/NB-Абрикос-190.jpg";
-import NBprunes from "../assets/NUTBERRY/NBdf/NB-Чернослив-280.jpg";
-import NBraisinW from "../assets/NUTBERRY/NBdf/NB-Изюм-светлый-190.jpg";
-import NBraisinB from "../assets/NUTBERRY/NBdf/NB-Изюм-темный-190.jpg";
-import NBraisinC from "../assets/NUTBERRY/NBdf/NB-Изюм-кишмиш-190.jpg";
-import NBapricotCuraga from "../assets/NUTBERRY/NBdf/NB-Курага-190.jpg";
+import NBapricot from "../assets/NUTBERRY/NBdf/NB-apricot-190.jpg";
+import NBprunes from "../assets/NUTBERRY/NBdf/NB-prune-280.jpg";
+import NBraisinW from "../assets/NUTBERRY/NBdf/NB-raisinW-190.jpg";
+import NBraisinB from "../assets/NUTBERRY/NBdf/NB-raisinB-190.jpg";
+import NBraisinC from "../assets/NUTBERRY/NBdf/NB-raisinC-190.jpg";
+import NBapricotCuraga from "../assets/NUTBERRY/NBdf/NB-curaga-190.jpg";
 
 export default {
   name: "NutberryDriedfruits",

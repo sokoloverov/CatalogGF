@@ -2,11 +2,7 @@
   <div>
     <transition name="fade" mode="out-in" appear>
       <div class="goods__box">
-        <div
-          class="goods__box_sku"
-          v-for="product in sku"
-          :key="product.picture"
-        >
+        <div class="goods__box_sku" v-for="product in sku" :key="product.picture">
           <a class="goods__box_a" @click="modalView(product)">
             <img class="goods__box_img" alt="Vue logo" :src="product.picture" />
             <p class="goods__box_name"><span v-html="product.text"></span></p>
@@ -52,7 +48,9 @@ export default {
 </script>
 
 <style lang="scss">
-//@import "../css/style.scss";
+$superMinScreen: 420px;
+$minScreen: 920px;
+$largeScreen: 1081px;
 /*ВИТРИНА ТОВАРОВ*/
 .goods__box {
   position: relative;
@@ -63,6 +61,12 @@ export default {
   justify-content: left;
   text-decoration-line: none;
   overflow-y: hidden;
+  @media (max-width: $largeScreen) {
+    margin: 0 auto;
+  }
+  @media (max-width: $largeScreen) and (orientation: landscape) {
+    width: 80%;
+  }
 }
 .goods__box_sku {
   display: flex;
@@ -71,6 +75,10 @@ export default {
   margin: 0.4rem 0.5rem 0;
   min-width: 175px;
   max-width: 15%;
+  @media (max-width: $largeScreen) {
+    margin: 0 auto;
+  }
+  cursor: pointer;
 }
 .goods__box_img {
   max-width: 100%;
