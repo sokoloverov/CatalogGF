@@ -40,7 +40,7 @@ export default {
     };
   },
   mounted() {
-    //setTimeout(this.clickCheck, 4000);
+    setTimeout(this.clickCheck, 5000);
   },
   methods: {
     clickCheck() {
@@ -52,7 +52,7 @@ export default {
         clearTimeout(i);
       }
       //интервал до включения скринсейвера
-      //setTimeout(this.go, 180000);
+      setTimeout(this.go, 180000);
     },
     go() {
       //включение скринсевера!

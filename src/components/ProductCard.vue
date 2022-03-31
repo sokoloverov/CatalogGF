@@ -63,7 +63,7 @@ $largeScreen: 1081px;
   height: 65%;
   display: flex;
   @media (max-width: $largeScreen) {
-    top: 37vh;
+    top: 20vh;
     left: 10vw;
     width: 80vw;
     height: 60vh;
@@ -77,11 +77,17 @@ $largeScreen: 1081px;
     width: 80vw;
     height: 90vh;
   }
-  @media (max-width: $minScreen) and (orientation: landscape) {
+  @media (min-width: $superMinScreen) and (max-width: $minScreen) and (orientation: landscape) {
     top: 5vh;
     left: 10vw;
-    width: 80vw;
+    width: 70vw;
     height: 90vh;
+  }
+  @media (min-width: $superMinScreen) and (max-width: $minScreen) and (orientation: portrait) {
+    top: 25vh;
+    left: 10vw;
+    width: 80vw;
+    height: 50vh;
   }
 }
 .goods__window_position {
@@ -119,6 +125,9 @@ $largeScreen: 1081px;
 }
 .goods__window_width40 {
   width: 40%;
+  @media (max-width: $minScreen) {
+    width: 100%;
+  }
 }
 .goods__window_name {
   font-size: 1.2rem;
